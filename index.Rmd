@@ -14,9 +14,16 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 ---
 
-# About
+# Introducción
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+La investigación en ciencias sociales enfrenta una crisis de confianza debido a la falta de transparencia y casos de fraude.
+
+La toma de decisiones informadas en áreas como la salud, la economía y la política depende en gran medida de investigaciones confiables en ciencias sociales. Sin embargo, la proliferación de casos de fraude y la falta de transparencia en la metodología de investigación han generado una creciente desconfianza en los resultados obtenidos.
+
+Este libro tiene como objetivo abordar esta problemática mediante la implementación de herramientas y estrategias que mejoren la rigurosidad y la credibilidad de la investigación en ciencias sociales.
+
+
+
 
 ## Usage 
 

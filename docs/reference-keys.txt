@@ -1,4 +1,8 @@
-about
+fig:nice-fig
+tab:nice-tab
+eq:binom
+thm:tri
+introducción
 usage
 render-book
 preview-book
