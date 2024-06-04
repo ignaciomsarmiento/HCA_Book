@@ -1,11 +1,82 @@
-# Hello bookdown 
+# Introducción {#intro}
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
 
-## A section
+La investigación en ciencias sociales enfrenta una crisis de confianza debido a la falta de transparencia y casos de fraude. La toma de decisiones informadas en áreas como la salud, la economía y la política depende en gran medida de investigaciones confiables. Sin embargo, la proliferación de casos de fraude y la falta de transparencia en la metodología de investigación han generado una creciente desconfianza en los resultados obtenidos. Este libro tiene como objetivo abordar esta problemática mediante la implementación de herramientas y estrategias que mejoren la rigurosidad y la credibilidad de la investigación en ciencias sociales.
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+La sociedad contemporánea es compleja y cambia rápidamente. Los líderes de gobiernos, empresas y organizaciones sin fines de lucro enfrentan constantemente una variedad de decisiones. Afortunadamente, estos líderes están invirtiendo cada vez más en la adquisición y análisis de datos para tomar decisiones informadas. Los investigadores son responsables de proporcionar esta información en áreas como la ciencia ambiental, la política económica, la inmigración y la reforma de la salud. El éxito de estas decisiones depende en gran medida de la calidad de la investigación subyacente. Investigaciones inexactas pueden llevar a políticas ineficaces o inapropiadas, afectando negativamente la vida de las personas.
 
-### An unnumbered section {-}
+## La Confiabilidad de la Evidencia
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+¿Cómo de confiable es la evidencia actual que sustenta la toma de decisiones? Muchos creen que no es lo suficientemente confiable. Una crisis de confianza ha surgido en la investigación en ciencias sociales, con voces influyentes tanto dentro como fuera del ámbito académico señalando que la investigación relevante para la política es a menudo menos fiable de lo que se afirma, o incluso incorrecta. La creencia popular de que se pueden manipular las estadísticas para obtener cualquier respuesta deseada refleja esta pérdida de fe en la investigación, y la percepción de que muchos hallazgos científicos son simplemente abogacía disfrazada de ciencia.
+
+En la era de las "noticias falsas" y el auge de movimientos políticos y religiosos extremistas, el papel de la investigación científica en establecer la verdad como un terreno común para el debate público es más importante que nunca.
+
+## Ejemplo de la Reforma de Salud en Estados Unidos
+
+El debate sobre la reforma de salud en Estados Unidos es un buen ejemplo de cómo la investigación puede influir en debates volátiles. En 2017, el intento de los republicanos en el Congreso de desmantelar la Ley de Cuidado de Salud a Bajo Precio (ACA, por sus siglas en inglés) fue influenciado por las estimaciones de la Oficina de Presupuesto del Congreso sobre el impacto probable de la derogación de la ACA en la cobertura de seguros y los resultados de salud. Algunos senadores votaron "No" basándose en esta evidencia, y la cobertura mediática de la investigación probablemente aumentó la popularidad del programa entre los votantes estadounidenses.
+
+## La Importancia de la Exactitud en la Investigación
+
+La exactitud y la credibilidad de la evidencia utilizada son extremadamente importantes cuando están en juego decisiones que afectarán millones de vidas. Los investigadores sociales tienen la responsabilidad de asegurar que sus conclusiones se basan en métodos y datos sólidos, y no en un sesgo político subyacente. Los resultados estadísticos deben tener valor probatorio y no ser seleccionados o fabricados para apoyar una agenda específica.
+
+Este libro proporciona herramientas para aumentar el rigor y la credibilidad de la investigación en ciencias sociales. Examinaremos los problemas actuales en la investigación social y sus implicaciones.
+
+## Problemas en la Investigación: Fraude y Consecuencias
+
+A pesar de siglos de investigación empírica en ciencias sociales, aún enfrentamos problemas significativos. Casos de fraude en la investigación han salido a la luz, junto con pruebas de que muchos hallazgos importantes no pueden ser replicados. Aunque el fraude es la excepción y no la regla, estos casos son síntomas dramáticos de problemas subyacentes más amplios.
+
+## Caso de Diederik Stapel
+
+Un ejemplo notable es el caso de Diederik Stapel, ex profesor de psicología en la Universidad de Tilburg, quien fabricó datos para muchos de sus artículos. Stapel nunca compartió sus datos, ni siquiera con sus estudiantes, y sus "habilidades mágicas" para producir resultados impresionantes levantaron sospechas con el tiempo. Una investigación universitaria llevó a su confesión y la retractación de al menos 55 artículos.
+
+
+## Caso de Francesca Gino
+
+Francesca Gino, una destacada profesora de la Escuela de Negocios de Harvard, se vio envuelta en un escándalo de fraude académico que conmocionó al mundo de la investigación en ciencias sociales. Gino, conocida por su trabajo en comportamiento organizacional y psicología, fue acusada de manipular datos en varios estudios publicados en prestigiosas revistas académicas.
+
+La investigación sobre su trabajo reveló que Gino había alterado datos para producir resultados que eran más interesantes y publicables. Al igual que en el caso de Diederik Stapel, la falta de transparencia en sus métodos y la reticencia a compartir datos con otros investigadores contribuyeron a que el fraude pasara desapercibido durante mucho tiempo.
+
+Las acusaciones llevaron a una revisión exhaustiva de sus publicaciones, resultando en la retractación de varios artículos. Este escándalo no solo afectó la reputación de Gino, sino que también tuvo un impacto negativo en sus coautores y en la credibilidad de la institución que representaba. La Escuela de Negocios de Harvard se vio obligada a revisar sus procedimientos y políticas para prevenir futuros casos de mala conducta.
+
+Este caso subraya la importancia de la transparencia y la reproducibilidad en la investigación académica. La manipulación de datos no solo distorsiona la verdad científica, sino que también daña la confianza del público en la ciencia. La comunidad académica debe tomar medidas proactivas para garantizar la integridad de la investigación y protegerse contra el fraude.
+
+Al igual que en otros casos de fraude, las acciones de Gino fueron vistas como un síntoma de problemas más profundos en el sistema de investigación, donde las presiones para publicar y obtener reconocimiento pueden llevar a algunos académicos a cometer actos deshonestos. Es esencial fomentar una cultura de integridad y rigor científico para preservar la validez y la utilidad de la investigación en ciencias sociales.
+
+## Otros Casos de Fraude
+
+El campo de la psicología social ha visto múltiples casos de fraude, y otros campos no están exentos. En 2015, un escándalo de fraude en ciencia política involucró un estudio sobre el impacto del cabildeo en los derechos de los homosexuales. Aunque el fraude es raro, estos casos afectan la percepción pública de la investigación en ciencias sociales.
+
+## Mejorar la Confiabilidad de la Investigación
+
+Para prevenir la mala práctica en la investigación, es necesario fortalecer las normas de compartición de datos, fomentar la transparencia y la reproducibilidad, y cambiar la cultura académica que prioriza la publicación sobre la calidad. Este libro tiene como objetivo abordar estos problemas y mejorar la confianza en la investigación en ciencias sociales.
+
+## Incapacidad para replicar resultados
+
+Un problema significativo en la investigación en ciencias sociales es la incapacidad de replicar los resultados de estudios anteriores, lo cual es crucial para validar la fiabilidad de los hallazgos científicos. A continuación se presenta una tabla que resume varios estudios sobre la reproducibilidad en la investigación económica:
+
+| Estudio | Número de artículos (solicitudes) | Reproducción intentada | Reproducción exitosa | Tasa de reproducción | Tasa de reproducción por artículo empírico |
+|---------|-----------------------------------|------------------------|----------------------|----------------------|--------------------------------------------|
+| Dewald et al. (1986) antes del cambio de política | 62 | 5 | 3 | 60.0% | 4.8% |
+| Dewald et al. (1986) después del cambio de política | 92 | 3 | 2 | 66.7% | 2.2% |
+| McCullough et al. (2006) | 193 | 62 | 14 | 22.6% | 7.3% |
+| Chang & Li (2017) | 67 | 59 | 29 | 49.2% | 43.3% |
+
+Estos estudios destacan varios puntos críticos:
+
+- **Dewald et al. (1986)**: Antes de un cambio de política que promovió prácticas de transparencia, se intentó replicar 5 de 62 artículos, logrando éxito en 3 casos (60.0%). Después del cambio de política, la tasa de éxito aumentó ligeramente al 66.7%, aunque el número absoluto de reproducciones exitosas fue bajo.
+
+- **McCullough et al. (2006)**: Este estudio intentó replicar 62 de 193 artículos, con una tasa de éxito del 22.6%. Esto sugiere que, incluso con mayores intentos de replicación, los resultados exitosos fueron limitados.
+
+- **Chang & Li (2017)**: Intentaron replicar 59 de 67 artículos, logrando éxito en 29 casos (49.2%). Este estudio muestra una mejora significativa en la tasa de reproducción, lo que puede indicar un progreso en las prácticas de investigación, aunque todavía hay margen para mejoras.
+
+La capacidad de replicar estudios es esencial para confirmar la validez de los resultados en ciencias sociales. Las tasas de reproducción varían significativamente, destacando la necesidad de políticas más robustas para mejorar la transparencia y reproducibilidad en la investigación. Estos problemas subrayan la importancia de fomentar una cultura académica que valore la replicación y la transparencia, asegurando que las conclusiones científicas sean fiables y puedan ser utilizadas de manera efectiva en la toma de decisiones políticas y sociales.
+
+
+## Cambios de la AEA sobre Transparencia y el Editor de Datos
+
+En respuesta a los crecientes problemas de reproducibilidad y transparencia en la investigación en ciencias sociales, la Asociación Estadounidense de Economía (AEA, por sus siglas en inglés) ha implementado cambios significativos en sus políticas editoriales. Estos cambios están diseñados para mejorar la credibilidad y la rigurosidad de la investigación publicada en sus revistas. Una de las medidas clave ha sido la implementación de requisitos más estrictos para la divulgación de datos y métodos. Los autores ahora deben proporcionar acceso a los datos y a los códigos de análisis utilizados en sus estudios, permitiendo a otros investigadores verificar los resultados de manera independiente. Esta medida busca reducir el riesgo de errores y aumentar la transparencia en el proceso de investigación.
+
+Además de los requisitos de divulgación de datos, la AEA ha creado el puesto de Editor de Datos (Data Editor). Este rol es fundamental para garantizar que los datos y códigos proporcionados por los autores cumplan con los estándares de calidad y transparencia establecidos por la asociación. El Editor de Datos revisa los materiales de apoyo de los estudios aceptados para publicación, asegurándose de que sean completos, precisos y suficientes para permitir la replicación de los resultados. Este paso adicional en el proceso de revisión editorial busca fortalecer la confianza en los hallazgos publicados y promover una cultura de apertura y responsabilidad en la comunidad investigadora.
+
+Estos esfuerzos de la AEA representan un paso importante hacia la mejora de la integridad en la investigación económica. Al exigir la divulgación de datos y la revisión rigurosa de los mismos, la AEA no solo mejora la calidad de las investigaciones publicadas, sino que también fomenta un ambiente de mayor colaboración y verificación entre los investigadores. La esperanza es que estas iniciativas inspiren a otras organizaciones académicas a adoptar prácticas similares, contribuyendo a un avance significativo en la reproducibilidad y transparencia en todas las disciplinas científicas.
+
