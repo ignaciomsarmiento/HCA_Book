@@ -1,0 +1,7 @@
+# Documentos dinámicos
+
+```{r rmd, echo = FALSE, out.width=600, out.height=400, fig.align='center'}
+knitr::include_graphics("figs/markdown.png")
+```
+
+.footnote[[Illustration by Allison Horst]( https://allisonhorst.github.io/ucsb-qmss-rmarkdown/)] 
