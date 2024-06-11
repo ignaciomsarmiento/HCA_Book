@@ -1,0 +1,77 @@
+# Investigación Ética {#invetica}
+
+
+
+En este capítulo discutiremos el `ethos` de la investigación científica, es decir, los valores que deberían guiar la práctica científica.  La ética en la investigación científica es fundamental para garantizar que el conocimiento generado sea confiable, válido y beneficioso para la sociedad. En este contexto, las normas mertonianas, propuestas por el sociólogo Robert K. Merton en 1942, representan uno de los marcos más influyentes y perdurables en la discusión sobre la ética científica.
+
+
+Merton veía la ciencia como un sistema extremadamente eficiente para producir conocimiento, y su discusión sobre el `ethos` de la ciencia fue un esfuerzo por explicar por qué la ciencia funcionaba tan bien. Los investigadores han sostenido durante mucho tiempo que los valores de apertura y replicación son fundamentales para lo que hacen, pero en la práctica  no siempre ha estado a la altura de esos ideales. 
+
+Merton situaba a los científicos en un sistema social con un conjunto de normas y describía los incentivos que enfrentan los investigadores individuales al actuar dentro de esa estructura. Las normas tienen un carácter dual: los incentivos proporcionados por un sistema bien estructurado apoyan un comportamiento que se adhiere a las normas, pero el sistema también funciona porque los actores internalizan las normas: las aceptan. Los cuatro valores fundamentales de la investigación científica que Merton articula son *universalismo*, *comunalidad*, *desinterés* y *escepticismo organizado*.
+
+
+Las normas mertonianas proporcionan un marco ético esencial para la práctica de la ciencia, asegurando que la búsqueda del conocimiento se realice de manera justa, abierta y responsable. Es seguro decir que muchos (si no la mayoría) de los estudiantes de posgrado, donde nos incluimos, nunca reciben una formación formal en el `ethos` de la investigación científica que Merton discute. En la mayoría de los casos, los estudiantes simplemente asimilan los valores, expectativas y normas predominantes de los investigadores a través de su asesor, otros profesores y compañeros de estudio. Los aspirantes a científicos sociales a menudo simplemente absorben elementos del `ethos científico mientras interactúan con colegas, pero existe la preocupación de que también se puedan transmitir lecciones negativas de esta manera.   Al adherirse a estos principios, los científicos contribuyen no solo al avance del conocimiento, sino también al bienestar y al progreso de la sociedad en su conjunto. A continuación, exploraremos las normas mertonianas para una investigación ética.
+
+
+
+
+
+
+## Normas mertonianas para una investigación ética
+
+### Universalismo
+
+El principio del universalismo es uno de los pilares fundamentales en la ética de la investigación científica según las normas mertonianas. Esta norma sostiene que las afirmaciones científicas deben evaluarse con criterios impersonales y universales, sin importar quién las haga. El conocimiento científico debe ser juzgado únicamente por su validez y mérito intrínseco, independientemente de la nacionalidad, género, religión, posición social o cualquier otra característica personal del científico.
+
+El universalismo es crucial porque promueve la objetividad y la equidad en la evaluación de los descubrimientos científicos. Al aplicar criterios universales, se asegura que el conocimiento científico sea accesible y evaluado de manera justa, evitando los prejuicios y la discriminación. Este principio fomenta un entorno en el que las ideas y los resultados pueden ser evaluados y aceptados basándose en evidencia empírica y razonamiento lógico, no en la autoridad o el prestigio del investigador.
+
+Una implicación importante es que las sociedades que promueven la igualdad de oportunidades educativas pueden experimentar un progreso científico más rápido. Cuando personas de diversos orígenes, independientemente de su género, etnia, religión, sexualidad o antecedentes académicos, pueden participar en la investigación, se enriquece el aprendizaje y el avance científico. Restringir el acceso a la formación científica excluye a grupos completos, empobreciendo el esfuerzo científico. 
+
+
+A pesar de su importancia, la implementación del universalismo no está exenta de desafíos. Los prejuicios implícitos, las redes de poder y la desigualdad de recursos entre diferentes grupos y regiones pueden influir en la visibilidad y la aceptación de ciertos trabajos científicos. Además, la accesibilidad a recursos como financiamiento, equipos y formación avanzada puede variar significativamente, afectando la capacidad de algunos investigadores para contribuir al conocimiento científico global.
+
+
+
+
+### Comunalismo
+
+Este principio sostiene que los resultados del trabajo científico deben ser compartidos libremente con la comunidad científica y con la sociedad en general. En otras palabras, el conocimiento generado a través de la investigación científica no debe ser propiedad exclusiva del investigador, sino que debe ser un bien común accesible para todos.
+
+En otras palabras, y en marcado contraste con muchas otras formas de propiedad fuera de la investigación, el `ethos` científico exige que el conocimiento generado por la investigación pertenezca a toda la comunidad y no solo a quienes lo descubren.
+
+El comunalismo es vital porque promueve la transparencia, la colaboración y el progreso continuo en la ciencia. Al compartir los resultados y los datos de la investigación, se facilita la verificación de los hallazgos, la replicación de los estudios y la acumulación colectiva de conocimientos. Esta práctica también fomenta un ambiente de colaboración en lugar de competencia desleal, permitiendo a los científicos construir sobre el trabajo de otros y acelerar el avance científico.
+
+
+A pesar de sus beneficios, el comunalismo enfrenta varios desafíos. Entre ellos se encuentran la protección de la propiedad intelectual, ya que los investigadores y las instituciones a veces son reacios a compartir sus resultados debido a preocupaciones sobre la propiedad intelectual y los derechos de autor. Además, los costos de publicación en revistas de acceso abierto pueden ser elevados, lo que limita la capacidad de algunos investigadores para compartir sus hallazgos. Por último, la competencia académica y la presión por publicar y obtener financiación pueden llevar a algunos investigadores a ser menos abiertos con sus datos y resultados.
+
+
+
+
+
+### Desinterés
+
+La norma mertoniana del desinterés en la investigación ética establece que los científicos deben actuar con imparcialidad y objetividad, buscando el conocimiento por el bien común y no por beneficios personales o intereses privados. En otras palabras, los científicos deben estar motivados por la curiosidad intelectual y el deseo de contribuir al conocimiento colectivo, en lugar de por ganancias personales, fama o poder. Este principio implica también que el investigador ético debe informar los resultados tal como son, incluso si esto perjudica su reputación, contradice el conocimiento establecido o enfada a otras personas.
+
+El desinterés es crucial para mantener la integridad y la credibilidad de la ciencia. Cuando los científicos se adhieren a este principio, se reduce el riesgo de sesgos, manipulaciones de datos y conflictos de interés que pueden distorsionar los resultados y comprometer la calidad de la investigación. El desinterés fomenta la confianza pública en la ciencia, asegurando que los hallazgos y conclusiones sean genuinos y basados en evidencias sólidas.
+
+Sin embargo, a pesar de su importancia, la implementación del desinterés enfrenta varios desafíos. Los investigadores pueden enfrentar presiones externas de patrocinadores, instituciones académicas o la industria para obtener resultados favorables o que apoyen ciertos intereses. Además, la intensa competencia por financiación, publicaciones y reconocimiento puede tentar a algunos científicos a priorizar sus intereses personales sobre el bien común. Por último, no todos los conflictos de interés son fácilmente identificables o declarados, lo que puede comprometer la objetividad de la investigación.
+
+
+### Escepticismo Organizado
+
+
+Este principio establece que los científicos deben adoptar una actitud crítica y cuestionadora hacia las afirmaciones y teorías científicas, incluidas las propias. Una característica fundamental del enfoque de los investigadores científicos es que no deben aceptar las cosas al pie de la letra: necesitan ver pruebas.
+
+El escepticismo organizado implica someter todas las afirmaciones a un riguroso escrutinio y verificación, promoviendo la revisión por pares, la replicación de estudios y la evaluación continua de los resultados. Esto significa que los científicos no deben limitarse a temas socialmente aceptables ni a lo que las autoridades consideran adecuado estudiar: el ideal es examinar críticamente todo.
+
+A pesar de sus beneficios, el escepticismo organizado enfrenta varios desafíos. Los científicos pueden tener sesgos personales o estar influenciados por la opinión dominante en su campo, lo que puede dificultar la evaluación objetiva de nuevas ideas. Además, la presión por publicar rápidamente y obtener financiación puede llevar a algunos investigadores a no someter sus trabajos a un escrutinio suficientemente riguroso. Asimismo, las ideas verdaderamente innovadoras pueden ser rechazadas inicialmente por la comunidad científica debido a su novedad y a la dificultad de encajarlas en el paradigma existente. Estos desafíos resaltan la importancia de mantener un equilibrio entre el escepticismo y la apertura a nuevas perspectivas en la investigación científica. 
+
+En última instancia, el escepticismo organizado no solo fortalece la calidad de la ciencia, sino que también fomenta un entorno en el que las ideas pueden ser rigurosamente probadas y evaluadas, garantizando que solo las teorías más robustas y bien fundamentadas sean aceptadas. Este enfoque crítico y abierto es esencial para el avance del conocimiento y para asegurar que la ciencia continúe siendo una herramienta confiable y efectiva para comprender el mundo.
+
+## Problemas
+
+### Sesgo en las publicaciones
+
+
+![](https://imgs.xkcd.com/comics/significant.png)
+
