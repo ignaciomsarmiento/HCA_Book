@@ -44,3 +44,7 @@ datos
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
 normas-mertonianas-sobre-la-investigación-ética
 normas-mertonianas-para-una-investigación-ética
+repositorios-de-datos
+cómo-usarlos
+subir-archivos
+comparación-osf-y-zenodo
