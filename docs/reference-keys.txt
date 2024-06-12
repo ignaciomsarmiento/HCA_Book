@@ -48,3 +48,11 @@ repositorios-de-datos
 cómo-usarlos
 subir-archivos
 comparación-osf-y-zenodo
+normas-en-la-práctica
+creando-la-estructura-de-proyecto-automaticamente
+cómo-ejecutar-el-script-en-windows
+instrucciones-para-ejecutar-el-script-en-windows-usando-github-desktop
+paso-1-instalar-github-desktop
+paso-2-crear-y-guardar-el-script
+paso-3-ejecutar-el-script-usando-git-bash
+cómo-ejecutar-el-script-en-mac

@@ -68,6 +68,8 @@ A pesar de sus beneficios, el escepticismo organizado enfrenta varios desafíos.
 
 En última instancia, el escepticismo organizado no solo fortalece la calidad de la ciencia, sino que también fomenta un entorno en el que las ideas pueden ser rigurosamente probadas y evaluadas, garantizando que solo las teorías más robustas y bien fundamentadas sean aceptadas. Este enfoque crítico y abierto es esencial para el avance del conocimiento y para asegurar que la ciencia continúe siendo una herramienta confiable y efectiva para comprender el mundo.
 
+
+## Normas en la práctica
 ## Problemas
 
 ### Sesgo en las publicaciones
