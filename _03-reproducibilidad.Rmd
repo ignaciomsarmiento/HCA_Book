@@ -1,0 +1,151 @@
+# Flujo de Trabajo Reproducible
+
+El trabajo con datos a menudo requiere miles o decenas de miles de líneas de código. Por lo tanto, para trabajar de manera transparente, debemos  adoptar tanto las técnicas estadísticas y metodológicas reproducibles, como las prácticas de flujo de trabajo y software que hagan que nuestro trabajo sea fácilmente reproducible por otros académicos. 
+
+El objetivo de este capítulo es introducir las prácticas más importantes en este ámbito. Hay varias herramientas principales que los investigadores pueden utilizar para asegurarse de que su trabajo sea reproducible. A continuación, discutimos las prácticas de flujo de trabajo. Al usar estas herramientas, un investigador se acercará al ideal de reproducibilidad de "flujo de trabajo de un solo clic": podrá volver a ejecutar todo el análisis (realizado anteriormente por otro investigador) desde cero con un solo clic o la ejecución de un solo `script`.
+
+
+
+
+### Reproducibilidad vs Replicabilidad 
+
+```{r REPRO, echo = FALSE, out.width=700, fig.align='center'}
+knitr::include_graphics("figs/reproducible-definition-grid.jpg")
+```
+
+.footnote[[Imagen: The Turing Way Community, & Scriberia (2020)]( https://doi.org/10.5281/zenodo.3332807)]
+
+
+
+- Reproducibilidad entonces quiere decir que los resultados se mantienen idénticos si los códigos o los datos no han cambiado.
+
+- Sin embargo, no es trivial saber si algo a cambiado en el tiempo
+
+- `Git` te permite hacer ambas cosas: saber si algo cambió y volver en el tiempo. Mas sobre esto en el proximo capitulo
+
+## Flujos de Trabajo
+
+
+
+El código  es solo un aspecto de una estructura más amplia que denominamos "flujo de trabajo", que abarca la combinación de datos, código, organización y documentación. Todo, desde los nombres de archivos y variables hasta la organización de carpetas, el almacenamiento de datos y la programación eficiente y legible, forma parte del flujo de trabajo. 
+
+```{r journey, echo = FALSE, out.width=500, fig.align='center'}
+knitr::include_graphics("figs/ReproducibleJourney.jpg")
+```
+
+.footnote[[Imagen: The Turing Way Community, & Scriberia (2020)]( http://doi.org/10.5281/zenodo.3695300)]
+
+
+
+### Estructura de Proyectos
+
+Un punto de partida natural para describir un buen flujo de trabajo es detallar una estructura básica de carpetas en el computador, nuestra sugerencia inspirada por Gentzgow y Shapiro (XXX) es la siguiente.
+
+
+```
+Complex Project Folder Estructure/
+├── build                    <- construcción de los datos
+│   └── input/
+│       └── my_data.csv
+│   └── scripts/
+│       └── clean_data.R
+│   └── output/
+│       └── data_clean.csv
+│   └── temp/
+│       └── temp_merge.csv
+├── analysis				   <- análisis de los datos
+│   └── input/
+│       └── data_clean.csv
+│   └── scripts/
+│       └── regressions_table1.R
+│       └── regressions_fig1.R
+│   └── output/
+│       └── fig1.png
+│       └── table1.tex
+│   └── temp/
+│       └── regressions.log
+└── Document                 <- Document
+    └── Document.Rmd         <- script documento dinámico
+   
+```
+
+
+ Por supuesto, los detalles variarán para diferentes tipos de investigación y los gustos de diferentes académicos, pero muchos proyectos pueden tener una estructura de archivos similar a la organización básica mostrada aquí. En primer lugar, necesita crear una carpeta maestra con un nombre corto pero descriptivo para el proyecto, un nombre que sea significativo tanto para usted como para sus colaboradores. (Pero por favor, no nombre la carpeta con el apellido de su coautor; ese no será un nombre de proyecto muy útil para ellos, ¿verdad?)
+ 
+ 
+
+
+
+#### Creando la Estructura de Proyecto automaticamente
+
+Una opción para la creación de esta estructura es simplemente tener un script que lo hace por nosotros. Para ello utilizaremos un script en Bash que crea la estructura de carpetas descriptas anteriormente. 
+
+```sh
+#!/bin/bash
+
+# Crear directorios de nivel superior
+mkdir -p 01_build 02_analysis 03_document
+
+# Crear subdirectorios dentro de build y analysis
+for dir in 01_build 02_analysis
+do
+  mkdir -p ./$dir/01_input
+  mkdir -p ./$dir/02_scripts
+  mkdir -p ./$dir/03_output
+  mkdir -p ./$dir/04_temp
+done
+
+# Navegar al directorio 02_analysis/03_output y crear subdirectorios
+cd 02_analysis/03_output
+mkdir -p Figures Tables
+
+echo "¡Carpetas creadas exitosamente!"
+```
+
+El script realiza 5 operaciones
+
+1. **Shebang (`#!/bin/bash`)**: Indica que el script debe ejecutarse con Bash.
+2. **Creación de directorios de nivel superior**: `mkdir -p 01_build 02_analysis 03_document` crea tres carpetas principales: `01_build`, `02_analysis`, y `03_document`.
+3. **Creación de subdirectorios**: Un bucle `for` recorre los directorios `01_build` y `02_analysis`, creando cuatro subcarpetas dentro de cada uno: `01_input`, `02_scripts`, `03_output`, y `04_temp`.
+4. **Navegar y crear más subdirectorios**: El script navega a `02_analysis/03_output` y crea dos subcarpetas más: `Figures` y `Tables`.
+5. **Mensaje de confirmación**: `echo "¡Carpetas creadas exitosamente!"` imprime un mensaje indicando que el proceso se ha completado.
+
+##### Cómo Ejecutar el Script en Windows
+
+
+Sí, puedes usar GitHub Desktop para instalar Git Bash y ejecutar scripts de Bash en Windows. Aquí están las instrucciones detalladas:
+
+
+1. **Paso 1**: Instalar **GitHub Desktop**. Para descargar e Instalar GitHub Desktop ve a [desktop.github.com](https://desktop.github.com) y descarga GitHub Desktop y sigue las instrucciones de instalación.
+
+2. **Paso 2**: Crear y guardar el Script. Para ello primero abre Notepad o cualquier editor de texto y luego copia el `script` anterior en el editor. Finalmente, guarda el archivo con la extensión `.sh`, por ejemplo, `create_folders.sh`.
+
+3. **Paso 3**: Ejecutar el Script Usando Git Bash:
+
+    3.1. Abre GitHub Desktop desde el menú de inicio. Ve a `File` > `Options` y asegúrate de que `Git Bash` está seleccionado como tu terminal predeterminada. Luego, haz clic en el botón de terminal en la esquina superior derecha de GitHub Desktop (ícono de terminal) para abrir Git Bash.
+    
+    3.2. Usa el comando `cd` para ir al directorio donde guardaste el script. Por ejemplo: `cd /c/Users/TuUsuario/PathToScript`
+    
+    3.3. Haz el script ejecutable, para ello ejecuta: `chmod +x create_folders.sh`
+    
+    3.4. Finalmente, ejecuta el script haciendo `./create_folders.sh` y las carpetas quedarán creadas en tu directorio
+
+  
+
+
+##### Cómo Ejecutar el Script en Mac
+
+1. **Paso 1**: Crear y guardar el Script. Abre un editor de texto, copia el `script` y guárdalo con la extensión `.sh`, por ejemplo, `create_folders.sh`.
+
+2. **Paso 2**: Abrir la Terminal. Ve a `Aplicaciones` > `Utilidades` > `Terminal`.
+
+3. **Paso 3**: Navegar al Directorio del Script:
+
+    3.1. Usa el comando `cd` para ir al directorio donde guardaste el script. Por ejemplo: `cd /Users/TuUsuario/PathToScript`
+    
+    3.2. Haz el script ejecutable, para ello ejecuta: `chmod +x create_folders.sh`
+    
+    3.3. Finalmente, ejecuta el script haciendo `./create_folders.sh` y las carpetas quedarán creadas en tu directorio.
+    
+    
+    
