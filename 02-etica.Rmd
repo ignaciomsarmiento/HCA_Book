@@ -84,7 +84,7 @@ En este trabajo ademas de preguntarle sobre  las cuatro normas de Merton, agrego
 | **Escepticismo Organizado** | Los científicos consideran todas las nuevas evidencias, hipótesis, teorías e innovaciones, incluso aquellas que desafían o contradicen su propio trabajo. | **Dogmatismo Organizado** | Los científicos invierten sus carreras en promover sus hallazgos, teorías o innovaciones más importantes. |
 | **Gobernanza**           | Los científicos son responsables de la dirección y control de la ciencia a través de la gobernanza, la autorregulación y la revisión por pares. | **Administración**       | Los científicos dependen de los administradores para dirigir la empresa científica a través de decisiones de gestión. |
 | **Calidad**              | Los científicos juzgan las contribuciones de los demás a la ciencia principalmente en función de la calidad. | **Cantidad**             | Los científicos evalúan el trabajo de los demás principalmente en función del número de publicaciones y subvenciones. |
-*Nota: Esta tabla fue adaptada de @anderson2007normative*
+*Nota: Esta tabla fue adaptada de* @anderson2007normative
 
 
 
@@ -92,7 +92,7 @@ La figura  \@ref(tab:anderson_fig) muestra los porcentajes de los científicos e
 
 ###  Normas versus contranormas en la práctica {#fig:anderson_fig}
 ![Dissonancia Normativa](figs/Anderson.png)
-*Nota: Esta figura fue tomada de @anderson2007normative *
+*Nota: Esta figura fue tomada de* @anderson2007normative 
 
 
 
@@ -104,4 +104,171 @@ Existe una disonancia significativa entre los ideales normativos y las percepcio
 
 
 
+
+## Problemas
+
+
+En el trabajo empírico una preocupación importante son los falsos positivos, que como ilustra @ioannidis2005most es un problema mucho más importante que lo que se había pensado previamente. El problema de falsos positivos está íntimamente ligado al sesgo de publicación y búsqueda de especificación. Un ejemplo humorístico, pero muy ilustrativo de esta problemática, es el cómic de XKCD titulado "Significant". En este cómic, un grupo de investigadores prueba la hipótesis de que comer jellybeans causa acné, realizando múltiples pruebas con diferentes colores de jellybeans. Después de 20 pruebas, finalmente encuentran un color (verde) que muestra una asociación significativa con el acné, aunque esta asociación sea un falso positivo debido al simple azar.
+
+![](https://imgs.xkcd.com/comics/significant.png)
+
+
+Este escenario refleja claramente el problema del sesgo de publicación y la búsqueda de especificación. El sesgo de publicación ocurre cuando algunos estudios son más propensos a ser publicados que otros en función de sus resultados. En el caso de los jellybeans, si consideramos que se realizaron 20 estudios separados, sólo se publicaría aquel que mostró un resultado significativo, ignorando los otros 19 que no encontraron ninguna asociación.
+
+La búsqueda de especificación, por otro lado, ocurre cuando los investigadores exploran múltiples formas de analizar los datos dentro de un mismo estudio, y sólo reportan aquellas que muestran resultados significativos. Si imaginamos que el investigador del cómic probó 20 formas diferentes de dividir la muestra hasta encontrar una que arrojara un resultado significativo, estaríamos frente a un caso de búsqueda de especificación. Estos dos fenómenos están estrechamente relacionados: la anticipación del sesgo de publicación por parte de los investigadores fomenta la búsqueda de especificación, ya que los investigadores se sienten presionados a encontrar resultados que sean "publicables".
+
+John Ioannidis, en su influyente artículo "Why Most Published Research Findings Are False", argumenta que debido a estos problemas, muchos de los hallazgos publicados en la literatura científica son falsos positivos. Según Ioannidis, la combinación de estudios con bajo poder estadístico, la flexibilidad en los diseños de estudio y los análisis, y el sesgo de publicación, contribuyen a una alta tasa de resultados falsos en la investigación científica.
+
+El cómic de XKCD sirve como una representación visual simple pero potente de estos problemas. Nos recuerda que debemos ser críticos con los resultados publicados y conscientes de los sesgos y prácticas que pueden distorsionalos. Al abordar estos problemas, es esencial mejorar la transparencia en la investigación, promover la publicación de todos los resultados, y adoptar prácticas estadísticas más rigurosas para reducir la prevalencia de falsos positivos y fortalecer la fiabilidad de nuestros hallazgos.
+
+
+
+
+<!--
+
+
+### Modelo de Ioannidis: Framework para Hallazgos Falsos Positivos
+
+El modelo de Ioannidis, también conocido como "Why Most Published Research Findings Are False", proporciona un marco teórico para entender por qué una gran proporción de los hallazgos científicos pueden ser falsos positivos. Este modelo se fundamenta en la estadística bayesiana y en varias consideraciones prácticas del proceso de investigación.
+
+#### Premisas Básicas del Modelo
+
+Claro, aquí tienes una tabla en Markdown que presenta los falsos positivos, verdaderos positivos, falsos negativos y verdaderos negativos, junto con sus respectivas notaciones típicas (\(\alpha\), \(1 - \beta\), etc.).
+
+
+| Resultado del Estudio / Realidad | Hipótesis Verdadera (\(H_1\))      | Hipótesis Falsa (\(H_0\))         |
+|----------------------------------|------------------------------------|-----------------------------------|
+| Resultado Significativo          | Verdaderos Positivos (\(1 - \beta\))| Falsos Positivos (\(\alpha\))     |
+| Resultado No Significativo       | Falsos Negativos (\(\beta\))        | Verdaderos Negativos (\(1 - \alpha\))|
+
+
+
+- **Verdaderos Positivos (\(1 - \beta\))**: La probabilidad de que el estudio detecte un efecto verdadero cuando realmente existe.
+- **Falsos Positivos (\(\alpha\))**: La probabilidad de que el estudio indique un efecto significativo cuando en realidad no existe.
+- **Falsos Negativos (\(\beta\))**: La probabilidad de que el estudio no detecte un efecto cuando realmente existe.
+- **Verdaderos Negativos (\(1 - \alpha\))**: La probabilidad de que el estudio no indique un efecto significativo cuando realmente no existe.
+
+
+
+1. **Potencia del estudio (Power, \( 1 - \beta \))**: La probabilidad de que un estudio detecte un verdadero efecto cuando este existe.
+2. **Nivel de significancia (\( \alpha \))**: El umbral para rechazar la hipótesis nula. Comúnmente se utiliza \( \alpha = 0.05 \).
+3. **Proporción de hipótesis verdaderas (\( R \))**: La proporción de todas las hipótesis investigadas que son realmente verdaderas.
+4. **Sesgo (Bias, \( u \))**: Factores que pueden aumentar la probabilidad de obtener resultados significativos debido a errores sistemáticos.
+
+#### Probabilidad Post-Hoc de un Hallazgo Verdadero
+
+La probabilidad post-hoc de que un hallazgo sea verdadero se puede expresar utilizando el teorema de Bayes:
+
+\[ P(V | S) = \frac{P(S | V) \cdot P(V)}{P(S)} \]
+
+Donde:
+- \( P(V | S) \) es la probabilidad de que el hallazgo sea verdadero dado que es significativo.
+- \( P(S | V) \) es la probabilidad de obtener un resultado significativo si el hallazgo es verdadero (la potencia del estudio).
+- \( P(V) \) es la probabilidad previa de que el hallazgo sea verdadero (relacionado con \( R \)).
+- \( P(S) \) es la probabilidad de obtener un resultado significativo.
+
+#### Derivación Bayesiana
+
+Para calcular \( P(V | S) \), necesitamos los siguientes componentes:
+
+1. **Probabilidad de obtener un resultado significativo si el hallazgo es verdadero**:
+
+\[ P(S | V) = 1 - \beta \]
+
+2. **Probabilidad de obtener un resultado significativo si el hallazgo es falso**:
+
+\[ P(S | F) = \alpha \]
+
+3. **Probabilidad previa de que un hallazgo sea verdadero**:
+
+\[ P(V) = R \]
+
+4. **Probabilidad previa de que un hallazgo sea falso**:
+
+\[ P(F) = 1 - R \]
+
+Usando el teorema de Bayes, la probabilidad post-hoc de que un hallazgo sea verdadero es:
+
+\[PPV =  P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + \alpha \cdot (1 - R)} \]
+
+Ioannidis llama a esto como el valor predictivo positivo (positive predicted value)
+
+
+XXX Explicacion de como funciona la formula
+
+#### Consideraciones del Sesgo
+
+El sesgo puede incrementar la probabilidad de obtener resultados significativos, tanto si el hallazgo es verdadero como si es falso. Si consideramos un sesgo \( u \), la probabilidad de obtener un resultado significativo se ajusta de la siguiente manera:
+
+\[ P(S | F, \text{sesgo}) = \alpha + u \]
+
+Incorporando el sesgo en la fórmula de Bayes:
+
+\[ P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + (\alpha + u) \cdot (1 - R)} \]
+
+#### Implicaciones del Modelo
+
+El modelo de Ioannidis muestra que la probabilidad de que un hallazgo sea verdadero depende críticamente de la potencia del estudio, el nivel de significancia, la proporción de hipótesis verdaderas y el sesgo. Algunas de las implicaciones clave son:
+
+1. **Bajo \( R \)**: Si la proporción de hipótesis verdaderas es baja, incluso estudios con alta potencia y bajos niveles de significancia tendrán una alta tasa de falsos positivos.
+2. **Sesgo alto**: Aumenta la probabilidad de falsos positivos, reduciendo la credibilidad de los hallazgos significativos.
+3. **Necesidad de replicación**: Para aumentar la credibilidad de los hallazgos, es esencial replicar estudios y aumentar el tamaño de la muestra.
+
+Este marco destaca la importancia de diseñar estudios con alta potencia, usar niveles de significancia adecuados y minimizar el sesgo para mejorar la veracidad de los hallazgos científicos.
+
+
+
+
+
+### Sesgo en las publicaciones
+
+
+
+
+## En la Practica [(Anderson et al 2007)](http://www.jstor.org/stable/pdf/10.1525/jer.2007.2.4.3.pdf)  
+
+![](figs/AMdV2007.PNG)
+
+
+El sesgo de publicacion ocurre cuando los estudios publicados en revistas cientificas estan sobrerepresentados por estudios que obtienen un particular tipo de restultados (e.g., rechazan la hipotesis nula). 
+
+Evidencia que sugiere la existencia de sesgo de publicacion:  
+
+- El tamaño de los efectos disminuye con el tamaño muestral ([Gerber et al  2001](http://pan.oxfordjournals.org/content/9/4/385.short)).  
+
+
+- La publicación de efectos nulos esta desapareciendo en el tiempo, en todas las disciplinas ([Fanelli 2011](http://link.springer.com/article/10.1007/s11192-011-0494-7)).  
+
+Evidencia que mide la magnitud del sesgo de publicación: 
+
+- Estudio que  siguió a experimentos completados muestra que aquellos experimentos con fuertes resultados son 40pp más probable de ser publicados, y 60pp más probable de ser escritos. Alto "file drawer problem". ([Franco et al 2014](http://science.sciencemag.org/content/345/6203/1502))
+
+- En economía [Andrews and Kasy (2019)](https://www.aeaweb.org/articles?id=10.1257/aer.20180310) estiman que, para algunas literaturas, los estudios que rechazan la nula son entre 3 y 30 (!) veces mas probables de ser publicados en journals top.   
+  
+
+## Sesgo de Publicacion en TESS/NSF [(Franco et al 2014)](http://science.sciencemag.org/content/345/6203/1502)  
+![](figs/Tess.PNG)
+
+## Problema #2: P-Hacking  
+<br>
+.font140[
+- Definición: flexibilidad en el análisis de datos permite presentar *casi cualquier resultado* bajo un umbral arbitrario; significancia estadística pierde sentido.
+
+- Otros nombres: "specification searching" ([Leamer 1983](http://www.econ.ucla.edu/workingpapers/wp239.pdf)), "data-fishing", grados de libertad del investigador, o "data-mining".  
+
+- No implica intencionalidad. Puede ser subconsciente, o simplemente una practica estándar del análisis estadístico ([Gelman and Loken 2013](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)).
+
+- Evidencia: comportamiento anomalo de test estadisticos entorno a umbrales arbitrarios.
+
+
+![](figs/GerberPS.PNG)
+
+![](figs/Brodeur_2.PNG)
+
+- Registros (o pre-pregistros)  
+- Planes de pre-analysis  
+- Reportes registrados 
+]
+
+--->
 
