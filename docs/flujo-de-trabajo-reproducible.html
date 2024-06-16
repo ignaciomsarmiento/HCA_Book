@@ -26,7 +26,7 @@ Continua</p>" />
 <meta name="author" content="Ignacio Sarmiento Barbieri | Gustavo Castillo-Alvarez" />
 
 
-<meta name="date" content="2024-06-12" />
+<meta name="date" content="2024-06-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -170,17 +170,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.3" data-path="invetica.html"><a href="invetica.html#problemas"><i class="fa fa-check"></i><b>3.3</b> Problemas</a>
 <ul>
 <li class="chapter" data-level="3.3.1" data-path="invetica.html"><a href="invetica.html#sesgo-en-las-publicaciones"><i class="fa fa-check"></i><b>3.3.1</b> Sesgo en las publicaciones</a></li>
+<li class="chapter" data-level="3.3.2" data-path="invetica.html"><a href="invetica.html#modelo-de-ioannidis-framework-para-hallazgos-falsos-positivos"><i class="fa fa-check"></i><b>3.3.2</b> Modelo de Ioannidis: Framework para Hallazgos Falsos Positivos</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html"><i class="fa fa-check"></i><b>4</b> Flujo de Trabajo Reproducible</a>
 <ul>
 <li class="chapter" data-level="4.0.1" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#reproducibilidad-vs-replicabilidad"><i class="fa fa-check"></i><b>4.0.1</b> Reproducibilidad vs Replicabilidad</a></li>
-<li class="chapter" data-level="4.1" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#flujos-de-trabajo"><i class="fa fa-check"></i><b>4.1</b> Flujos de Trabajo</a></li>
-<li class="chapter" data-level="4.2" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#flujos-de-trabajo-estructura-de-proyectos"><i class="fa fa-check"></i><b>4.2</b> Flujos de Trabajo: Estructura de Proyectos</a>
+<li class="chapter" data-level="4.1" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#flujos-de-trabajo"><i class="fa fa-check"></i><b>4.1</b> Flujos de Trabajo</a>
 <ul>
-<li class="chapter" data-level="4.2.1" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#creando-la-estructura-de-proyecto-automaticamente"><i class="fa fa-check"></i><b>4.2.1</b> Creando la Estructura de Proyecto automaticamente</a></li>
-<li class="chapter" data-level="4.2.2" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#instrucciones-para-ejecutar-el-script-en-windows-usando-github-desktop"><i class="fa fa-check"></i><b>4.2.2</b> Instrucciones para Ejecutar el Script en Windows Usando GitHub Desktop</a></li>
-<li class="chapter" data-level="4.2.3" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#cómo-ejecutar-el-script-en-mac"><i class="fa fa-check"></i><b>4.2.3</b> Cómo Ejecutar el Script en Mac</a></li>
+<li class="chapter" data-level="4.1.1" data-path="flujo-de-trabajo-reproducible.html"><a href="flujo-de-trabajo-reproducible.html#estructura-de-proyectos"><i class="fa fa-check"></i><b>4.1.1</b> Estructura de Proyectos</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="control-de-versión-con-github.html"><a href="control-de-versión-con-github.html"><i class="fa fa-check"></i><b>5</b> Control de Versión con Git(Hub)</a>
@@ -222,11 +220,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="flujo-de-trabajo-reproducible" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number"> 4</span> Flujo de Trabajo Reproducible<a href="flujo-de-trabajo-reproducible.html#flujo-de-trabajo-reproducible" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>La ciencia empírica a menudo requiere miles o decenas de miles de líneas de código, poco o nada de lo cual aparece en el artículo publicado resultante. De aquí surge el principio de Claerbout:</p>
-<p><strong>``An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures’’</strong>
-(<em>“Un artículo sobre ciencia computacional en una publicación científica no es la beca en sí, sino simplemente una publicidad de la beca. La verdadera beca es el entorno completo de desarrollo de software y el conjunto completo de instrucciones que generaron las figuras” (Buckheit y Donoho 1995)</em>”.</p>
-<p>No vemos razón para detenernos solo en las figuras o gráficos. El mismo principio se aplica a nuestras tablas de análisis, coeficientes, errores estándar, pruebas estadísticas, y así sucesivamente.</p>
-<p>Por lo tanto, para trabajar de manera transparente, los investigadores deben adoptar tanto las técnicas estadísticas y metodológicas reproducibles discutidas en este libro, como las prácticas de flujo de trabajo y software que hagan que su trabajo sea fácilmente reproducible por otros académicos.</p>
+<p>El trabajo con datos a menudo requiere miles o decenas de miles de líneas de código. Por lo tanto, para trabajar de manera transparente, debemos adoptar tanto las técnicas estadísticas y metodológicas reproducibles, como las prácticas de flujo de trabajo y software que hagan que nuestro trabajo sea fácilmente reproducible por otros académicos.</p>
 <p>El objetivo de este capítulo es introducir las prácticas más importantes en este ámbito. Hay varias herramientas principales que los investigadores pueden utilizar para asegurarse de que su trabajo sea reproducible. A continuación, discutimos las prácticas de flujo de trabajo. Al usar estas herramientas, un investigador se acercará al ideal de reproducibilidad de “flujo de trabajo de un solo clic”: podrá volver a ejecutar todo el análisis (realizado anteriormente por otro investigador) desde cero con un solo clic o la ejecución de un solo <code>script</code>.</p>
 <div id="reproducibilidad-vs-replicabilidad" class="section level3 hasAnchor" number="4.0.1">
 <h3><span class="header-section-number">4.0.1</span> Reproducibilidad vs Replicabilidad<a href="flujo-de-trabajo-reproducible.html#reproducibilidad-vs-replicabilidad" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -243,9 +237,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>El código es solo un aspecto de una estructura más amplia que denominamos “flujo de trabajo”, que abarca la combinación de datos, código, organización y documentación. Todo, desde los nombres de archivos y variables hasta la organización de carpetas, el almacenamiento de datos y la programación eficiente y legible, forma parte del flujo de trabajo.</p>
 <p><img src="figs/ReproducibleJourney.jpg" width="500" style="display: block; margin: auto;" /></p>
 <p>.footnote[<a href="http://doi.org/10.5281/zenodo.3695300">Imagen: The Turing Way Community, &amp; Scriberia (2020)</a>]</p>
-</div>
-<div id="flujos-de-trabajo-estructura-de-proyectos" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Flujos de Trabajo: Estructura de Proyectos<a href="flujo-de-trabajo-reproducible.html#flujos-de-trabajo-estructura-de-proyectos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="estructura-de-proyectos" class="section level3 hasAnchor" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Estructura de Proyectos<a href="flujo-de-trabajo-reproducible.html#estructura-de-proyectos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Un punto de partida natural para describir un buen flujo de trabajo es detallar una estructura básica de carpetas en el computador, nuestra sugerencia inspirada por Gentzgow y Shapiro (XXX) es la siguiente.</p>
 <pre><code>Complex Project Folder Estructure/
 ├── build                    &lt;- construcción de los datos
@@ -272,8 +265,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     └── Document.Rmd         &lt;- script documento dinámico
    </code></pre>
 <p>Por supuesto, los detalles variarán para diferentes tipos de investigación y los gustos de diferentes académicos, pero muchos proyectos pueden tener una estructura de archivos similar a la organización básica mostrada aquí. En primer lugar, necesita crear una carpeta maestra con un nombre corto pero descriptivo para el proyecto, un nombre que sea significativo tanto para usted como para sus colaboradores. (Pero por favor, no nombre la carpeta con el apellido de su coautor; ese no será un nombre de proyecto muy útil para ellos, ¿verdad?)</p>
-<div id="creando-la-estructura-de-proyecto-automaticamente" class="section level3 hasAnchor" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Creando la Estructura de Proyecto automaticamente<a href="flujo-de-trabajo-reproducible.html#creando-la-estructura-de-proyecto-automaticamente" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="creando-la-estructura-de-proyecto-automaticamente" class="section level4 hasAnchor" number="4.1.1.1">
+<h4><span class="header-section-number">4.1.1.1</span> Creando la Estructura de Proyecto automaticamente<a href="flujo-de-trabajo-reproducible.html#creando-la-estructura-de-proyecto-automaticamente" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Una opción para la creación de esta estructura es simplemente tener un script que lo hace por nosotros. Para ello utilizaremos un script en Bash que crea la estructura de carpetas descriptas anteriormente.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="flujo-de-trabajo-reproducible.html#cb2-1" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
 <span id="cb2-2"><a href="flujo-de-trabajo-reproducible.html#cb2-2" tabindex="-1"></a></span>
@@ -302,114 +295,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>Navegar y crear más subdirectorios</strong>: El script navega a <code>02_analysis/03_output</code> y crea dos subcarpetas más: <code>Figures</code> y <code>Tables</code>.</li>
 <li><strong>Mensaje de confirmación</strong>: <code>echo "¡Carpetas creadas exitosamente!"</code> imprime un mensaje indicando que el proceso se ha completado.</li>
 </ol>
-<div id="cómo-ejecutar-el-script-en-windows" class="section level4 hasAnchor" number="4.2.1.1">
-<h4><span class="header-section-number">4.2.1.1</span> Cómo Ejecutar el Script en Windows<a href="flujo-de-trabajo-reproducible.html#cómo-ejecutar-el-script-en-windows" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="cómo-ejecutar-el-script-en-windows" class="section level5 hasAnchor" number="4.1.1.1.1">
+<h5><span class="header-section-number">4.1.1.1.1</span> Cómo Ejecutar el Script en Windows<a href="flujo-de-trabajo-reproducible.html#cómo-ejecutar-el-script-en-windows" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Sí, puedes usar GitHub Desktop para instalar Git Bash y ejecutar scripts de Bash en Windows. Aquí están las instrucciones detalladas:</p>
-</div>
-</div>
-<div id="instrucciones-para-ejecutar-el-script-en-windows-usando-github-desktop" class="section level3 hasAnchor" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> Instrucciones para Ejecutar el Script en Windows Usando GitHub Desktop<a href="flujo-de-trabajo-reproducible.html#instrucciones-para-ejecutar-el-script-en-windows-usando-github-desktop" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="paso-1-instalar-github-desktop" class="section level4 hasAnchor" number="4.2.2.1">
-<h4><span class="header-section-number">4.2.2.1</span> Paso 1: Instalar GitHub Desktop<a href="flujo-de-trabajo-reproducible.html#paso-1-instalar-github-desktop" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ol style="list-style-type: decimal">
-<li><strong>Descargar e Instalar GitHub Desktop</strong>:
-<ul>
-<li>Ve a <a href="https://desktop.github.com">desktop.github.com</a> y descarga GitHub Desktop.</li>
-<li>Sigue las instrucciones de instalación.</li>
-</ul></li>
+<li><p><strong>Paso 1</strong>: Instalar <strong>GitHub Desktop</strong>. Para descargar e Instalar GitHub Desktop ve a <a href="https://desktop.github.com">desktop.github.com</a> y descarga GitHub Desktop y sigue las instrucciones de instalación.</p></li>
+<li><p><strong>Paso 2</strong>: Crear y guardar el Script. Para ello primero abre Notepad o cualquier editor de texto y luego copia el <code>script</code> anterior en el editor. Finalmente, guarda el archivo con la extensión <code>.sh</code>, por ejemplo, <code>create_folders.sh</code>.</p></li>
+<li><p><strong>Paso 3</strong>: Ejecutar el Script Usando Git Bash:</p>
+<p>3.1. Abre GitHub Desktop desde el menú de inicio. Ve a <code>File</code> &gt; <code>Options</code> y asegúrate de que <code>Git Bash</code> está seleccionado como tu terminal predeterminada. Luego, haz clic en el botón de terminal en la esquina superior derecha de GitHub Desktop (ícono de terminal) para abrir Git Bash.</p>
+<p>3.2. Usa el comando <code>cd</code> para ir al directorio donde guardaste el script. Por ejemplo: <code>cd /c/Users/TuUsuario/PathToScript</code></p>
+<p>3.3. Haz el script ejecutable, para ello ejecuta: <code>chmod +x create_folders.sh</code></p>
+<p>3.4. Finalmente, ejecuta el script haciendo <code>./create_folders.sh</code> y las carpetas quedarán creadas en tu directorio</p></li>
 </ol>
 </div>
-<div id="paso-2-crear-y-guardar-el-script" class="section level4 hasAnchor" number="4.2.2.2">
-<h4><span class="header-section-number">4.2.2.2</span> Paso 2: Crear y Guardar el Script<a href="flujo-de-trabajo-reproducible.html#paso-2-crear-y-guardar-el-script" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="cómo-ejecutar-el-script-en-mac" class="section level5 hasAnchor" number="4.1.1.1.2">
+<h5><span class="header-section-number">4.1.1.1.2</span> Cómo Ejecutar el Script en Mac<a href="flujo-de-trabajo-reproducible.html#cómo-ejecutar-el-script-en-mac" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <ol style="list-style-type: decimal">
-<li><strong>Abrir un Editor de Texto</strong>:
-<ul>
-<li>Abre Notepad o cualquier editor de texto.</li>
-</ul></li>
-<li><strong>Copiar y Pegar el Script</strong>:
-<ul>
-<li><p>Copia el siguiente script en el editor:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="flujo-de-trabajo-reproducible.html#cb3-1" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
-<span id="cb3-2"><a href="flujo-de-trabajo-reproducible.html#cb3-2" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="flujo-de-trabajo-reproducible.html#cb3-3" tabindex="-1"></a><span class="co"># Crear directorios de nivel superior</span></span>
-<span id="cb3-4"><a href="flujo-de-trabajo-reproducible.html#cb3-4" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> 01_build 02_analysis 03_document</span>
-<span id="cb3-5"><a href="flujo-de-trabajo-reproducible.html#cb3-5" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="flujo-de-trabajo-reproducible.html#cb3-6" tabindex="-1"></a><span class="co"># Crear subdirectorios dentro de build y analysis</span></span>
-<span id="cb3-7"><a href="flujo-de-trabajo-reproducible.html#cb3-7" tabindex="-1"></a><span class="cf">for</span> dir <span class="kw">in</span> 01_build 02_analysis</span>
-<span id="cb3-8"><a href="flujo-de-trabajo-reproducible.html#cb3-8" tabindex="-1"></a><span class="cf">do</span></span>
-<span id="cb3-9"><a href="flujo-de-trabajo-reproducible.html#cb3-9" tabindex="-1"></a>  <span class="fu">mkdir</span> <span class="at">-p</span> ./<span class="va">$dir</span>/01_input</span>
-<span id="cb3-10"><a href="flujo-de-trabajo-reproducible.html#cb3-10" tabindex="-1"></a>  <span class="fu">mkdir</span> <span class="at">-p</span> ./<span class="va">$dir</span>/02_scripts</span>
-<span id="cb3-11"><a href="flujo-de-trabajo-reproducible.html#cb3-11" tabindex="-1"></a>  <span class="fu">mkdir</span> <span class="at">-p</span> ./<span class="va">$dir</span>/03_output</span>
-<span id="cb3-12"><a href="flujo-de-trabajo-reproducible.html#cb3-12" tabindex="-1"></a>  <span class="fu">mkdir</span> <span class="at">-p</span> ./<span class="va">$dir</span>/04_temp</span>
-<span id="cb3-13"><a href="flujo-de-trabajo-reproducible.html#cb3-13" tabindex="-1"></a><span class="cf">done</span></span>
-<span id="cb3-14"><a href="flujo-de-trabajo-reproducible.html#cb3-14" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="flujo-de-trabajo-reproducible.html#cb3-15" tabindex="-1"></a><span class="co"># Navegar al directorio 02_analysis/03_output y crear subdirectorios</span></span>
-<span id="cb3-16"><a href="flujo-de-trabajo-reproducible.html#cb3-16" tabindex="-1"></a><span class="bu">cd</span> 02_analysis/03_output</span>
-<span id="cb3-17"><a href="flujo-de-trabajo-reproducible.html#cb3-17" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> Figures Tables</span>
-<span id="cb3-18"><a href="flujo-de-trabajo-reproducible.html#cb3-18" tabindex="-1"></a></span>
-<span id="cb3-19"><a href="flujo-de-trabajo-reproducible.html#cb3-19" tabindex="-1"></a><span class="bu">echo</span> <span class="st">&quot;¡Carpetas creadas exitosamente!&quot;</span></span></code></pre></div></li>
-</ul></li>
-<li><strong>Guardar el Archivo</strong>:
-<ul>
-<li>Guarda el archivo con la extensión <code>.sh</code>, por ejemplo, <code>create_folders.sh</code>.</li>
-</ul></li>
-</ol>
-</div>
-<div id="paso-3-ejecutar-el-script-usando-git-bash" class="section level4 hasAnchor" number="4.2.2.3">
-<h4><span class="header-section-number">4.2.2.3</span> Paso 3: Ejecutar el Script Usando Git Bash<a href="flujo-de-trabajo-reproducible.html#paso-3-ejecutar-el-script-usando-git-bash" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<ol style="list-style-type: decimal">
-<li><strong>Abrir Git Bash</strong>:
-<ul>
-<li>Abre GitHub Desktop desde el menú de inicio.</li>
-<li>Ve a <code>File</code> &gt; <code>Options</code> y asegúrate de que <code>Git Bash</code> está seleccionado como tu terminal predeterminada.</li>
-<li>Luego, haz clic en el botón de terminal en la esquina superior derecha de GitHub Desktop (ícono de terminal) para abrir Git Bash.</li>
-</ul></li>
-<li><strong>Navegar al Directorio del Script</strong>:
-<ul>
-<li><p>Usa el comando <code>cd</code> para ir al directorio donde guardaste el script. Por ejemplo:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="flujo-de-trabajo-reproducible.html#cb4-1" tabindex="-1"></a><span class="bu">cd</span> /c/Users/TuUsuario/PathToScript</span></code></pre></div></li>
-</ul></li>
-<li><strong>Hacer el Script Ejecutable</strong>:
-<ul>
-<li><p>Ejecuta:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="flujo-de-trabajo-reproducible.html#cb5-1" tabindex="-1"></a><span class="fu">chmod</span> +x create_folders.sh</span></code></pre></div></li>
-</ul></li>
-<li><strong>Ejecutar el Script</strong>:
-<ul>
-<li><p>Ejecuta:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="flujo-de-trabajo-reproducible.html#cb6-1" tabindex="-1"></a><span class="ex">./create_folders.sh</span></span></code></pre></div></li>
-</ul></li>
-</ol>
-</div>
-</div>
-<div id="cómo-ejecutar-el-script-en-mac" class="section level3 hasAnchor" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> Cómo Ejecutar el Script en Mac<a href="flujo-de-trabajo-reproducible.html#cómo-ejecutar-el-script-en-mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="list-style-type: decimal">
-<li><strong>Crear y Guardar el Script</strong>:
-<ul>
-<li>Abre un editor de texto (como TextEdit), copia el script y guárdalo con la extensión <code>.sh</code> (por ejemplo, <code>create_folders.sh</code>).</li>
-</ul></li>
-<li><strong>Abrir la Terminal</strong>:
-<ul>
-<li>Ve a <code>Aplicaciones</code> &gt; <code>Utilidades</code> &gt; <code>Terminal</code>.</li>
-</ul></li>
-<li><strong>Navegar al Directorio del Script</strong>:
-<ul>
-<li><p>Usa el comando <code>cd</code> para ir al directorio donde guardaste el script, por ejemplo:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="flujo-de-trabajo-reproducible.html#cb7-1" tabindex="-1"></a><span class="bu">cd</span> /Users/TuUsuario/PathToScript</span></code></pre></div></li>
-</ul></li>
-<li><strong>Hacer el Script Ejecutable</strong>:
-<ul>
-<li><p>Ejecuta:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="flujo-de-trabajo-reproducible.html#cb8-1" tabindex="-1"></a><span class="fu">chmod</span> +x create_folders.sh</span></code></pre></div></li>
-</ul></li>
-<li><strong>Ejecutar el Script</strong>:
-<ul>
-<li><p>Ejecuta:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="flujo-de-trabajo-reproducible.html#cb9-1" tabindex="-1"></a><span class="ex">./create_folders.sh</span></span></code></pre></div></li>
-</ul></li>
+<li><p><strong>Paso 1</strong>: Crear y guardar el Script. Abre un editor de texto (como TextEdit), copia el <code>script</code> y guárdalo con la extensión <code>.sh</code>, por ejemplo, <code>create_folders.sh</code>.</p></li>
+<li><p><strong>Paso 2</strong>: Abrir la Terminal. Ve a <code>Aplicaciones</code> &gt; <code>Utilidades</code> &gt; <code>Terminal</code>.</p></li>
+<li><p><strong>Paso 3</strong>: Navegar al Directorio del Script:</p>
+<p>3.1. Usa el comando <code>cd</code> para ir al directorio donde guardaste el script. Por ejemplo: <code>cd /Users/TuUsuario/PathToScript</code></p>
+<p>3.2. Haz el script ejecutable, para ello ejecuta: <code>chmod +x create_folders.sh</code></p>
+<p>3.3. Finalmente, ejecuta el script haciendo <code>./create_folders.sh</code> y las carpetas quedarán creadas en tu directorio.</p></li>
 </ol>
 
+</div>
+</div>
 </div>
 </div>
 </div>

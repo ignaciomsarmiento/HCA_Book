@@ -5,8 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
+url: https://ignaciomsarmiento.github.io/HCA_Book/
 description: |
   Este será el libro guía con el que podrán seguir el curso *HCA* de Educación 
   Continua

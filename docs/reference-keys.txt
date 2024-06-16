@@ -56,3 +56,16 @@ paso-1-instalar-github-desktop
 paso-2-crear-y-guardar-el-script
 paso-3-ejecutar-el-script-usando-git-bash
 cómo-ejecutar-el-script-en-mac
+modelo-de-ioannidis-framework-para-hallazgos-falsos-positivos
+premisas-básicas-del-modelo
+probabilidad-post-hoc-de-un-hallazgo-verdadero
+derivación-bayesiana
+consideraciones-del-sesgo
+implicaciones-del-modelo
+en-la-practica-anderson-et-al-2007
+sesgo-de-publicacion-en-tessnsf-franco-et-al-2014
+problema-2-p-hacking
+estructura-de-proyectos
+pérdida-en-la-confianza-fraude-y-consecuencias
+fraude
+incapacidad-para-reproducir-resultados
