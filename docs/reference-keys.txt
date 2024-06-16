@@ -69,3 +69,8 @@ estructura-de-proyectos
 pérdida-en-la-confianza-fraude-y-consecuencias
 fraude
 incapacidad-para-reproducir-resultados
+tabla-1-normas-y-contranormas-en-la-ciencia
+interpretación
+tab:normascontranormas
+fig:anderson
+fig:anderson_fig

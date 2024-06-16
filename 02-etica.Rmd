@@ -2,7 +2,7 @@
 
 
 
-En este capítulo discutiremos el `ethos` de la investigación científica, es decir, los valores que deberían guiar la práctica científica.  La ética en la investigación científica es fundamental para garantizar que el conocimiento generado sea confiable, válido y beneficioso para la sociedad. En este contexto, las normas mertonianas, propuestas por el sociólogo Robert K. Merton en 1942, representan uno de los marcos más influyentes y perdurables en la discusión sobre la ética científica.
+En este capítulo discutiremos el `ethos` de la investigación, es decir, los valores que deberían guiar la práctica científica.  La ética en la investigación es fundamental para garantizar que el conocimiento generado sea confiable, válido y beneficioso para la sociedad. En este contexto, las normas mertonianas, propuestas por el sociólogo Robert K. Merton en 1942, representan uno de los marcos más influyentes y perdurables en la discusión sobre la ética en la investigación.
 
 
 Merton veía la ciencia como un sistema extremadamente eficiente para producir conocimiento, y su discusión sobre el `ethos` de la ciencia fue un esfuerzo por explicar por qué la ciencia funcionaba tan bien. Los investigadores han sostenido durante mucho tiempo que los valores de apertura y replicación son fundamentales para lo que hacen, pero en la práctica  no siempre ha estado a la altura de esos ideales. 
@@ -11,8 +11,6 @@ Merton situaba a los científicos en un sistema social con un conjunto de normas
 
 
 Las normas mertonianas proporcionan un marco ético esencial para la práctica de la ciencia, asegurando que la búsqueda del conocimiento se realice de manera justa, abierta y responsable. Es seguro decir que muchos (si no la mayoría) de los estudiantes de posgrado, donde nos incluimos, nunca reciben una formación formal en el `ethos` de la investigación científica que Merton discute. En la mayoría de los casos, los estudiantes simplemente asimilan los valores, expectativas y normas predominantes de los investigadores a través de su asesor, otros profesores y compañeros de estudio. Los aspirantes a científicos sociales a menudo simplemente absorben elementos del `ethos científico mientras interactúan con colegas, pero existe la preocupación de que también se puedan transmitir lecciones negativas de esta manera.   Al adherirse a estos principios, los científicos contribuyen no solo al avance del conocimiento, sino también al bienestar y al progreso de la sociedad en su conjunto. A continuación, exploraremos las normas mertonianas para una investigación ética.
-
-
 
 
 
@@ -70,145 +68,38 @@ En última instancia, el escepticismo organizado no solo fortalece la calidad de
 
 
 ## Normas en la práctica
-## Problemas
 
-### Sesgo en las publicaciones
+Una camino para entender lo que piensa y hacen los investigadores es preguntarles directamente. Esto es lo que hicieron @anderson2007normative en su trabajo titulado "Normative dissonance in science: Results from a national survey of US scientists". En este trabajo investigaron la disonancia normativa en la ciencia, es decir, la discrepancia entre los ideales normativos ampliamente aceptados y las percepciones de los científicos sobre su propio comportamiento y el de otros. Para ello utilizando respuestas de una encuesta a 3,247 científicos en etapas iniciales y en la mitad de sus carreras, financiados por los Institutos Nacionales de Salud (NIH) de EE. UU. El NIH financia una amplia gama de investigadores, desde científicos de laboratorio en investigación biomédica hasta científicos sociales en muchas disciplinas cuyo trabajo trata temas de salud. Entonces, aunque no es una muestra completamente representativa de todos los académicos, sí cubre una gran variedad de campos.
 
+En este trabajo ademas de preguntarle sobre  las cuatro normas de Merton, agrego dos valores adicionales: *Gobernanza* y *Calidad*. Al mismo tiempo emparejó  cada uno con una "contranorma" que los académicos han identificado como existentes en la comunidad investigadora. Estas seis parejas de normas y contranormas se describen en la  tabla \@ref(tab:normascontranormas). Por ejemplo, la contranorma del *universalismo* es el *particularismo*, que representa una falta de apertura a diferentes tipos de personas o investigadores, y específicamente la creencia de que la evidencia científica debe ser juzgada principalmente en función del historial de investigación del investigador en lugar de la calidad de la evidencia en sí.
 
-![](https://imgs.xkcd.com/comics/significant.png)
 
+### Normas y Contranormas en la Ciencia {#tab:normascontranormas}
 
-## En la Practica [(Anderson et al 2007)](http://www.jstor.org/stable/pdf/10.1525/jer.2007.2.4.3.pdf)  
+| **Norma**                | **Descripción**                                                                        | **Contranorma**          | **Descripción**                                                                  |
+|--------------------------|----------------------------------------------------------------------------------------|--------------------------|----------------------------------------------------------------------------------|
+| **Comunalidad**          | Los científicos comparten abiertamente sus hallazgos con colegas.                      | **Secreto**              | Los científicos protegen sus hallazgos más recientes para asegurar prioridad en la publicación, patente o aplicaciones. |
+| **Universalismo**        | Los científicos evalúan la investigación solo en función de su mérito.                 | **Particularismo**       | Los científicos evalúan el nuevo conocimiento y sus aplicaciones basándose en la reputación y productividad pasada del individuo o grupo de investigación. |
+| **Desinteresado**        | Los científicos están motivados por el deseo de conocimiento y descubrimiento.         | **Interesado**           | Los científicos compiten con otros en el mismo campo por financiamiento y reconocimiento de sus logros. |
+| **Escepticismo Organizado** | Los científicos consideran todas las nuevas evidencias, hipótesis, teorías e innovaciones, incluso aquellas que desafían o contradicen su propio trabajo. | **Dogmatismo Organizado** | Los científicos invierten sus carreras en promover sus hallazgos, teorías o innovaciones más importantes. |
+| **Gobernanza**           | Los científicos son responsables de la dirección y control de la ciencia a través de la gobernanza, la autorregulación y la revisión por pares. | **Administración**       | Los científicos dependen de los administradores para dirigir la empresa científica a través de decisiones de gestión. |
+| **Calidad**              | Los científicos juzgan las contribuciones de los demás a la ciencia principalmente en función de la calidad. | **Cantidad**             | Los científicos evalúan el trabajo de los demás principalmente en función del número de publicaciones y subvenciones. |
+*Nota: Esta tabla fue adaptada de @anderson2007normative*
 
-![](figs/AMdV2007.PNG)
 
 
-El sesgo de publicacion ocurre cuando los estudios publicados en revistas cientificas estan sobrerepresentados por estudios que obtienen un particular tipo de restultados (e.g., rechazan la hipotesis nula). 
+La figura  \@ref(tab:anderson_fig) muestra los porcentajes de los científicos en dos etapas de su carrera (inicio y mitad) que tienen puntuaciones normativas y contranormativas en tres categorías: suscripción, comportamiento propio y comportamiento de otros.
 
-Evidencia que sugiere la existencia de sesgo de publicacion:  
+###  Normas versus contranormas en la práctica {#fig:anderson_fig}
+![Dissonancia Normativa](figs/Anderson.png)
+*Nota: Esta figura fue tomada de @anderson2007normative *
 
-- El tamaño de los efectos disminuye con el tamaño muestral ([Gerber et al  2001](http://pan.oxfordjournals.org/content/9/4/385.short)).  
 
 
-- La publicación de efectos nulos esta desapareciendo en el tiempo, en todas las disciplinas ([Fanelli 2011](http://link.springer.com/article/10.1007/s11192-011-0494-7)).  
+Esta figura subraya la desconexión entre las normas a las que los científicos suscriben y lo que perciben como el comportamiento típico, especialmente en el comportamiento de otros científicos, lo que refleja la disonancia normativa en el entorno de investigación. En cuanto a la **Suscripción a Normas (Subscription)**, la mayoría (aproximadamente 90%) de los científicos en la etapa de **Mitad de Carrera** suscriben a las normas (barra gris), con muy pocos teniendo puntuaciones iguales (rayada) o menores (negra) en comparación con las contranormas. Para los científicos en **Inicio de Carrera**, la situación es similar: una gran mayoría suscribe a las normas, con pocos teniendo puntuaciones iguales o menores en comparación con las contranormas. En términos de **Comportamiento Propio (Own Behavior)**, aunque la mayoría de los científicos en Mitad de Carrera tienen puntuaciones normativas mayores que las contranormativas, hay una proporción significativa con puntuaciones iguales o menores en comparación con las contranormas. Este patrón se repite en los científicos en Inicio de Carrera, pero con una mayor proporción de científicos con puntuaciones iguales o menores en comparación con las contranormas. Respecto al **Comportamiento de Otros (Others' Behavior)**, una mayoría de los científicos en Mitad de Carrera perciben el comportamiento típico de otros científicos como más contranormativo que normativo. Esta percepción es aún más marcada entre los científicos en Inicio de Carrera, con una gran mayoría percibiendo el comportamiento de otros como más contranormativo que normativo. 
 
-Evidencia que mide la magnitud del sesgo de publicación: 
 
-- Estudio que  siguió a experimentos completados muestra que aquellos experimentos con fuertes resultados son 40pp más probable de ser publicados, y 60pp más probable de ser escritos. Alto "file drawer problem". ([Franco et al 2014](http://science.sciencemag.org/content/345/6203/1502))
 
-- En economía [Andrews and Kasy (2019)](https://www.aeaweb.org/articles?id=10.1257/aer.20180310) estiman que, para algunas literaturas, los estudios que rechazan la nula son entre 3 y 30 (!) veces mas probables de ser publicados en journals top.   
-  
+Existe una disonancia significativa entre los ideales normativos y las percepciones del comportamiento real, tanto propio como de otros, siendo más pronunciada en la percepción del comportamiento de otros científicos. Los científicos en ambientes más competitivos tienden a ver un comportamiento más contranormativo, lo cual crea una fuente persistente de tensión y estrés en la comunidad científica. Esta figura subraya la desconexión entre las normas a las que los científicos suscriben y lo que perciben como el comportamiento típico, especialmente en el comportamiento de otros científicos, lo que refleja la disonancia normativa en el entorno de investigación. Sin embargo, surge la pregunta de cuál parte de la figura deberíamos creer: la parte media, que es mixta pero en general apoya las normas, o la parte inferior, que presenta una visión pesimista del campo de la investigación en su conjunto. Es posible que la última sea demasiado pesimista. Tal vez todos escuchan sobre unos pocos "casos malos", como los casos de fraude discutidos en el primer capítulo, y a partir de ahí condenan injustamente el estado de la ética en todo su campo.
 
-## Sesgo de Publicacion en TESS/NSF [(Franco et al 2014)](http://science.sciencemag.org/content/345/6203/1502)  
-![](figs/Tess.PNG)
 
-## Problema #2: P-Hacking  
-<br>
-.font140[
-- Definición: flexibilidad en el análisis de datos permite presentar *casi cualquier resultado* bajo un umbral arbitrario; significancia estadística pierde sentido.
-
-- Otros nombres: "specification searching" ([Leamer 1983](http://www.econ.ucla.edu/workingpapers/wp239.pdf)), "data-fishing", grados de libertad del investigador, o "data-mining".  
-
-- No implica intencionalidad. Puede ser subconsciente, o simplemente una practica estándar del análisis estadístico ([Gelman and Loken 2013](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)).
-
-- Evidencia: comportamiento anomalo de test estadisticos entorno a umbrales arbitrarios.
-
-
-![](figs/GerberPS.PNG)
-
-![](figs/Brodeur_2.PNG)
-
-- Registros (o pre-pregistros)  
-- Planes de pre-analysis  
-- Reportes registrados 
-]
-
-
-### Modelo de Ioannidis: Framework para Hallazgos Falsos Positivos
-
-El modelo de Ioannidis, también conocido como "Why Most Published Research Findings Are False", proporciona un marco teórico para entender por qué una gran proporción de los hallazgos científicos pueden ser falsos positivos. Este modelo se fundamenta en la estadística bayesiana y en varias consideraciones prácticas del proceso de investigación.
-
-#### Premisas Básicas del Modelo
-
-Claro, aquí tienes una tabla en Markdown que presenta los falsos positivos, verdaderos positivos, falsos negativos y verdaderos negativos, junto con sus respectivas notaciones típicas (\(\alpha\), \(1 - \beta\), etc.).
-
-
-| Resultado del Estudio / Realidad | Hipótesis Verdadera (\(H_1\))      | Hipótesis Falsa (\(H_0\))         |
-|----------------------------------|------------------------------------|-----------------------------------|
-| Resultado Significativo          | Verdaderos Positivos (\(1 - \beta\))| Falsos Positivos (\(\alpha\))     |
-| Resultado No Significativo       | Falsos Negativos (\(\beta\))        | Verdaderos Negativos (\(1 - \alpha\))|
-
-
-
-- **Verdaderos Positivos (\(1 - \beta\))**: La probabilidad de que el estudio detecte un efecto verdadero cuando realmente existe.
-- **Falsos Positivos (\(\alpha\))**: La probabilidad de que el estudio indique un efecto significativo cuando en realidad no existe.
-- **Falsos Negativos (\(\beta\))**: La probabilidad de que el estudio no detecte un efecto cuando realmente existe.
-- **Verdaderos Negativos (\(1 - \alpha\))**: La probabilidad de que el estudio no indique un efecto significativo cuando realmente no existe.
-
-
-
-1. **Potencia del estudio (Power, \( 1 - \beta \))**: La probabilidad de que un estudio detecte un verdadero efecto cuando este existe.
-2. **Nivel de significancia (\( \alpha \))**: El umbral para rechazar la hipótesis nula. Comúnmente se utiliza \( \alpha = 0.05 \).
-3. **Proporción de hipótesis verdaderas (\( R \))**: La proporción de todas las hipótesis investigadas que son realmente verdaderas.
-4. **Sesgo (Bias, \( u \))**: Factores que pueden aumentar la probabilidad de obtener resultados significativos debido a errores sistemáticos.
-
-#### Probabilidad Post-Hoc de un Hallazgo Verdadero
-
-La probabilidad post-hoc de que un hallazgo sea verdadero se puede expresar utilizando el teorema de Bayes:
-
-\[ P(V | S) = \frac{P(S | V) \cdot P(V)}{P(S)} \]
-
-Donde:
-- \( P(V | S) \) es la probabilidad de que el hallazgo sea verdadero dado que es significativo.
-- \( P(S | V) \) es la probabilidad de obtener un resultado significativo si el hallazgo es verdadero (la potencia del estudio).
-- \( P(V) \) es la probabilidad previa de que el hallazgo sea verdadero (relacionado con \( R \)).
-- \( P(S) \) es la probabilidad de obtener un resultado significativo.
-
-#### Derivación Bayesiana
-
-Para calcular \( P(V | S) \), necesitamos los siguientes componentes:
-
-1. **Probabilidad de obtener un resultado significativo si el hallazgo es verdadero**:
-
-\[ P(S | V) = 1 - \beta \]
-
-2. **Probabilidad de obtener un resultado significativo si el hallazgo es falso**:
-
-\[ P(S | F) = \alpha \]
-
-3. **Probabilidad previa de que un hallazgo sea verdadero**:
-
-\[ P(V) = R \]
-
-4. **Probabilidad previa de que un hallazgo sea falso**:
-
-\[ P(F) = 1 - R \]
-
-Usando el teorema de Bayes, la probabilidad post-hoc de que un hallazgo sea verdadero es:
-
-\[PPV =  P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + \alpha \cdot (1 - R)} \]
-
-Ioannidis llama a esto como el valor predictivo positivo (positive predicted value)
-
-
-XXX Explicacion de como funciona la formula
-
-#### Consideraciones del Sesgo
-
-El sesgo puede incrementar la probabilidad de obtener resultados significativos, tanto si el hallazgo es verdadero como si es falso. Si consideramos un sesgo \( u \), la probabilidad de obtener un resultado significativo se ajusta de la siguiente manera:
-
-\[ P(S | F, \text{sesgo}) = \alpha + u \]
-
-Incorporando el sesgo en la fórmula de Bayes:
-
-\[ P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + (\alpha + u) \cdot (1 - R)} \]
-
-#### Implicaciones del Modelo
-
-El modelo de Ioannidis muestra que la probabilidad de que un hallazgo sea verdadero depende críticamente de la potencia del estudio, el nivel de significancia, la proporción de hipótesis verdaderas y el sesgo. Algunas de las implicaciones clave son:
-
-1. **Bajo \( R \)**: Si la proporción de hipótesis verdaderas es baja, incluso estudios con alta potencia y bajos niveles de significancia tendrán una alta tasa de falsos positivos.
-2. **Sesgo alto**: Aumenta la probabilidad de falsos positivos, reduciendo la credibilidad de los hallazgos significativos.
-3. **Necesidad de replicación**: Para aumentar la credibilidad de los hallazgos, es esencial replicar estudios y aumentar el tamaño de la muestra.
-
-Este marco destaca la importancia de diseñar estudios con alta potencia, usar niveles de significancia adecuados y minimizar el sesgo para mejorar la veracidad de los hallazgos científicos.
