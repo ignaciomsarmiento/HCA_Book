@@ -157,7 +157,7 @@ En resumen, los <span style="color: red;">falsos positivos (\(\alpha\))</span> s
 
 ### Modelo conceptual para aproximar estos problemas
 
-Un modelo muy útil para entender estos problemas claves fue desarrollado por @ioannidis2005most en su artículo *"Why Most Published Research Findings Are False"*. Este artítculo proporciona un marco teórico para entender por qué una gran proporción de los hallazgos científicos pueden ser falsos positivos. Este modelo se fundamenta en la estadística bayesiana y en varias consideraciones prácticas del proceso de investigación.
+Un modelo muy útil para entender estos problemas claves fue desarrollado por @ioannidis2005most en su artículo *"Why Most Published Research Findings Are False"*. Este artículo proporciona un marco teórico para entender por qué una gran proporción de los hallazgos científicos pueden ser falsos positivos. Este modelo se fundamenta en la estadística bayesiana y en varias consideraciones prácticas del proceso de investigación.
 
 Específicamente este modelo estima el valor predictivo positivo (*positive predictive value o PPV*) de la investigación. Esto es simplemente la  probabilidad post-hoc de que un resultado sea verdadero condicional a que el test de hipótesis es significativo. Es decir
 
@@ -189,7 +189,7 @@ Sin embargo, la realidad es considerablemente más complicada y, como describe @
 
 Discutimos estas extensiones a continuación. Empezamos con el tema del poder estadístico. En economía empírica, @doucouliagos2012estimates, @ioannidis2017power, y otros han documentado que los estudios, en la práctica, tiene bajo poder estadístico. Por ejemplo, @ioannidis2017power argumenta que el poder mediano de los estudios en economía es alrededor del 18% lo que implica que el PPV es de $64\%$, es decir que el $36\%$ de los resultados son falsos positivos. Más aun si se utilizan rutinariamente estudios con baja potencia para probar hipótesis que probablemente son falsas, la tasa de falsos positivos puede superar el 50 por ciento (por ejemplo, poder = 0.20 y $R_i = 0.2$ da un $PPV = 0.44$).
 
-Este problema, y otros más, se ven exacerbadas si existe sesgo de publicación. @ioannidis2005most extieende el  modelo para incluir la posibilidad de sesgo del investigador, que peude tomar varias formas incluidas cualquier combinación de manipulación de datos, búsqueda de especificaciones, informes selectivos, e incluso fraude. Si incorporamos este sesgo como un termino $u$, la expresión anterior queda
+Este problema, y otros más, se ven exacerbadas si existe sesgo de publicación. @ioannidis2005most extiende el  modelo para incluir la posibilidad de sesgo del investigador, que puede tomar varias formas incluidas cualquier combinación de manipulación de datos, búsqueda de especificaciones, informes selectivos, e incluso fraude. Si incorporamos este sesgo como un termino $u$, la expresión anterior queda
 
 $$
 PPV= \frac{(1 - \beta) \cdot R + u \beta R}{(1 - \beta) \cdot R + \alpha + u\beta R + u(1- \alpha)} 

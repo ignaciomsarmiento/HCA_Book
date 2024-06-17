@@ -27,6 +27,7 @@ La Figura \@ref{fig:turner} muestra las tasas drásticamente diferentes de publi
 
 ###  Status de publicacion y decisión de la FDA {#fig:turner}
 ![turner](figs/turner.jpg)
+
 *Nota: Esta figura fue tomada de* @turner2008selective 
 
 
@@ -60,7 +61,7 @@ Basándonos en la lista de verificación de la FDA, y las sugerencias de @christ
 
 9. **Modelo Estructural**. Si está probando un modelo estructural, es decir, construyendo un modelo matemático formal desde los primeros principios de maximización de utilidad y estimando parámetros del modelo estructural, como a veces hacen los economistas, debe asegurarse de incluir una discusión detallada de su enfoque. La forma funcional de una función de utilidad o ecuación de maximización de beneficios está sujeta al menos a tanta flexibilidad post hoc como lo está la regresión estándar.
 
-10. **¡Marca de Tiempo!** Es importante que el plan pueda ser comprobado que fue realizado previo al estudio.
+10. **¡Sello que registre cuando fue publicado!** Es importante que el plan pueda ser comprobado que fue realizado previo al estudio.
 
 Los planes de pre-análisis todavía son nuevos en las ciencias sociales, y esta lista probablemente evolucionará en los próximos años a medida que los investigadores exploren el potencial y las posibles limitaciones de esta nueva herramienta. Pero esta lista es un muy buen punto de partida. Para aquellos preocupados por la posibilidad de que se les anticipe en nuevos diseños de investigación y preguntas a partir de los PAPs o descripciones de proyectos publicados públicamente, varios de los registros de ciencias sociales actualmente permiten el embargo temporal de los detalles del proyecto. Por ejemplo, el registro de la AEA permite a un usuario ocultar ciertos detalles del estudio hasta el final del embargo.
 
@@ -70,7 +71,7 @@ Los planes de pre-análisis todavía son nuevos en las ciencias sociales, y esta
 #### PAPs y los Reportes Registrados
 
 
-Los Reportes Registrados (*Registered Reports*) son un formato de publicación que enfatiza la importancia de la pregunta de investigación y la calidad de la metodología al realizar la revisión por pares antes de la recopilación de datos. Los autores primero escriben un protocolo de estudio detallado en el PAP y luego lo envian a una revista antes qeu el experimento inicie o se recolecten los datos. La revista revisa el plan y da una aceptación en principio o no.
+Los Reportes Registrados (*Registered Reports*) son un formato de publicación que enfatiza la importancia de la pregunta de investigación y la calidad de la metodología al realizar la revisión por pares antes de la recopilación de datos. Los autores primero escriben un protocolo de estudio detallado en el PAP y luego lo envían a una revista antes que el experimento inicie o se recolecten los datos. La revista revisa el plan y da una aceptación en principio o no.
 
 
 ###  Modelos de publicacion: Standard y Regristrados {#fig:registered}
