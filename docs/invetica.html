@@ -127,7 +127,11 @@ div.csl-indent {
 <li class="chapter" data-level="3.2.1" data-path="invetica.html"><a href="invetica.html#tab:normascontranormas"><i class="fa fa-check"></i><b>3.2.1</b> Normas y Contranormas en la Ciencia</a></li>
 <li class="chapter" data-level="3.2.2" data-path="invetica.html"><a href="invetica.html#fig:anderson_fig"><i class="fa fa-check"></i><b>3.2.2</b> Normas versus contranormas en la práctica</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="invetica.html"><a href="invetica.html#problemas"><i class="fa fa-check"></i><b>3.3</b> Problemas</a></li>
+<li class="chapter" data-level="3.3" data-path="invetica.html"><a href="invetica.html#problemas"><i class="fa fa-check"></i><b>3.3</b> Problemas</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="invetica.html"><a href="invetica.html#modelo-conceptual-para-aproximar-estos-problemas"><i class="fa fa-check"></i><b>3.3.1</b> Modelo conceptual para aproximar estos problemas</a></li>
+<li class="chapter" data-level="3.3.2" data-path="invetica.html"><a href="invetica.html#evidencia-del-problema"><i class="fa fa-check"></i><b>3.3.2</b> Evidencia del problema</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="./" target="blank">Haciendo Ciencia Abierta</a></li>
@@ -262,7 +266,7 @@ div.csl-indent {
 <p><img src="https://imgs.xkcd.com/comics/significant.png" /></p>
 <p>Este escenario refleja claramente el problema del sesgo de publicación y la búsqueda de especificación. El sesgo de publicación ocurre cuando algunos estudios son más propensos a ser publicados que otros en función de sus resultados. En el caso de los jellybeans, si consideramos que se realizaron 20 estudios separados, sólo se publicaría aquel que mostró un resultado significativo, ignorando los otros 19 que no encontraron ninguna asociación.</p>
 <p>La búsqueda de especificación, por otro lado, ocurre cuando los investigadores exploran múltiples formas de analizar los datos dentro de un mismo estudio, y sólo reportan aquellas que muestran resultados significativos. Si imaginamos que el investigador del cómic probó 20 formas diferentes de dividir la muestra hasta encontrar una que arrojara un resultado significativo, estaríamos frente a un caso de búsqueda de especificación. Estos dos fenómenos están estrechamente relacionados: la anticipación del sesgo de publicación por parte de los investigadores fomenta la búsqueda de especificación, ya que los investigadores se sienten presionados a encontrar resultados que sean “publicables”.</p>
-<p>John Ioannidis, en su influyente artículo “Why Most Published Research Findings Are False”, argumenta que debido a estos problemas, muchos de los hallazgos publicados en la literatura científica son falsos positivos. Según Ioannidis, la combinación de estudios con bajo poder estadístico, la flexibilidad en los diseños de estudio y los análisis, y el sesgo de publicación, contribuyen a una alta tasa de resultados falsos en la investigación científica.</p>
+<p>John Ioannidis, en su influyente artículo <em>“Why Most Published Research Findings Are False”</em>, argumenta que debido a estos problemas, muchos de los hallazgos publicados en la literatura científica son falsos positivos. Según Ioannidis, la combinación de estudios con bajo poder estadístico, la flexibilidad en los diseños de estudio y los análisis, y el sesgo de publicación, contribuyen a una alta tasa de resultados falsos en la investigación científica.</p>
 <p>El cómic de XKCD sirve como una representación visual simple pero potente de estos problemas. Nos recuerda que debemos ser críticos con los resultados publicados y conscientes de los sesgos y prácticas que pueden distorsionalos. Al abordar estos problemas, es esencial mejorar la transparencia en la investigación, promover la publicación de todos los resultados, y adoptar prácticas estadísticas más rigurosas para reducir la prevalencia de falsos positivos y fortalecer la fiabilidad de nuestros hallazgos.</p>
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 <p><b> Falsos Positivos en Tests de Hipótesis </b></p>
@@ -304,153 +308,75 @@ div.csl-indent {
 - Haciendo <strong>Inferencia correcta (verdadero positivo) (probabilidad = <span class="math inline">\(1−\beta\)</span>)</strong>: La prueba correctamente rechaza <span class="math inline">\(H_0\)</span> cuando <span class="math inline">\(H_1\)</span> es verdadera. Esta es la potencia del test, que es 1 menos la probabilidad de cometer un error de Tipo II (<span class="math inline">\(\beta\)</span>).</p>
 <p>En resumen, los <span style="color: red;">falsos positivos (<span class="math inline">\(\alpha\)</span>)</span> son situaciones donde el test sugiere incorrectamente la existencia de</p>
 </div>
-<!--
-
-
-### Modelo de Ioannidis: Framework para Hallazgos Falsos Positivos
-
-El modelo de Ioannidis, también conocido como "Why Most Published Research Findings Are False", proporciona un marco teórico para entender por qué una gran proporción de los hallazgos científicos pueden ser falsos positivos. Este modelo se fundamenta en la estadística bayesiana y en varias consideraciones prácticas del proceso de investigación.
-
-#### Premisas Básicas del Modelo
-
-Claro, aquí tienes una tabla en Markdown que presenta los falsos positivos, verdaderos positivos, falsos negativos y verdaderos negativos, junto con sus respectivas notaciones típicas (\(\alpha\), \(1 - \beta\), etc.).
-
-
-| Resultado del Estudio / Realidad | Hipótesis Verdadera (\(H_1\))      | Hipótesis Falsa (\(H_0\))         |
-|----------------------------------|------------------------------------|-----------------------------------|
-| Resultado Significativo          | Verdaderos Positivos (\(1 - \beta\))| Falsos Positivos (\(\alpha\))     |
-| Resultado No Significativo       | Falsos Negativos (\(\beta\))        | Verdaderos Negativos (\(1 - \alpha\))|
-
-
-
-- **Verdaderos Positivos (\(1 - \beta\))**: La probabilidad de que el estudio detecte un efecto verdadero cuando realmente existe.
-- **Falsos Positivos (\(\alpha\))**: La probabilidad de que el estudio indique un efecto significativo cuando en realidad no existe.
-- **Falsos Negativos (\(\beta\))**: La probabilidad de que el estudio no detecte un efecto cuando realmente existe.
-- **Verdaderos Negativos (\(1 - \alpha\))**: La probabilidad de que el estudio no indique un efecto significativo cuando realmente no existe.
-
-
-
-1. **Potencia del estudio (Power, \( 1 - \beta \))**: La probabilidad de que un estudio detecte un verdadero efecto cuando este existe.
-2. **Nivel de significancia (\( \alpha \))**: El umbral para rechazar la hipótesis nula. Comúnmente se utiliza \( \alpha = 0.05 \).
-3. **Proporción de hipótesis verdaderas (\( R \))**: La proporción de todas las hipótesis investigadas que son realmente verdaderas.
-4. **Sesgo (Bias, \( u \))**: Factores que pueden aumentar la probabilidad de obtener resultados significativos debido a errores sistemáticos.
-
-#### Probabilidad Post-Hoc de un Hallazgo Verdadero
-
-La probabilidad post-hoc de que un hallazgo sea verdadero se puede expresar utilizando el teorema de Bayes:
-
-\[ P(V | S) = \frac{P(S | V) \cdot P(V)}{P(S)} \]
-
-Donde:
-- \( P(V | S) \) es la probabilidad de que el hallazgo sea verdadero dado que es significativo.
-- \( P(S | V) \) es la probabilidad de obtener un resultado significativo si el hallazgo es verdadero (la potencia del estudio).
-- \( P(V) \) es la probabilidad previa de que el hallazgo sea verdadero (relacionado con \( R \)).
-- \( P(S) \) es la probabilidad de obtener un resultado significativo.
-
-#### Derivación Bayesiana
-
-Para calcular \( P(V | S) \), necesitamos los siguientes componentes:
-
-1. **Probabilidad de obtener un resultado significativo si el hallazgo es verdadero**:
-
-\[ P(S | V) = 1 - \beta \]
-
-2. **Probabilidad de obtener un resultado significativo si el hallazgo es falso**:
-
-\[ P(S | F) = \alpha \]
-
-3. **Probabilidad previa de que un hallazgo sea verdadero**:
-
-\[ P(V) = R \]
-
-4. **Probabilidad previa de que un hallazgo sea falso**:
-
-\[ P(F) = 1 - R \]
-
-Usando el teorema de Bayes, la probabilidad post-hoc de que un hallazgo sea verdadero es:
-
-\[PPV =  P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + \alpha \cdot (1 - R)} \]
-
-Ioannidis llama a esto como el valor predictivo positivo (positive predicted value)
-
-
-XXX Explicacion de como funciona la formula
-
-#### Consideraciones del Sesgo
-
-El sesgo puede incrementar la probabilidad de obtener resultados significativos, tanto si el hallazgo es verdadero como si es falso. Si consideramos un sesgo \( u \), la probabilidad de obtener un resultado significativo se ajusta de la siguiente manera:
-
-\[ P(S | F, \text{sesgo}) = \alpha + u \]
-
-Incorporando el sesgo en la fórmula de Bayes:
-
-\[ P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + (\alpha + u) \cdot (1 - R)} \]
-
-#### Implicaciones del Modelo
-
-El modelo de Ioannidis muestra que la probabilidad de que un hallazgo sea verdadero depende críticamente de la potencia del estudio, el nivel de significancia, la proporción de hipótesis verdaderas y el sesgo. Algunas de las implicaciones clave son:
-
-1. **Bajo \( R \)**: Si la proporción de hipótesis verdaderas es baja, incluso estudios con alta potencia y bajos niveles de significancia tendrán una alta tasa de falsos positivos.
-2. **Sesgo alto**: Aumenta la probabilidad de falsos positivos, reduciendo la credibilidad de los hallazgos significativos.
-3. **Necesidad de replicación**: Para aumentar la credibilidad de los hallazgos, es esencial replicar estudios y aumentar el tamaño de la muestra.
-
-Este marco destaca la importancia de diseñar estudios con alta potencia, usar niveles de significancia adecuados y minimizar el sesgo para mejorar la veracidad de los hallazgos científicos.
-
-
-
-
-
-### Sesgo en las publicaciones
-
-
-
-
-## En la Practica [(Anderson et al 2007)](http://www.jstor.org/stable/pdf/10.1525/jer.2007.2.4.3.pdf)  
-
-![](figs/AMdV2007.PNG)
-
-
-El sesgo de publicacion ocurre cuando los estudios publicados en revistas cientificas estan sobrerepresentados por estudios que obtienen un particular tipo de restultados (e.g., rechazan la hipotesis nula). 
-
-Evidencia que sugiere la existencia de sesgo de publicacion:  
-
-- El tamaño de los efectos disminuye con el tamaño muestral ([Gerber et al  2001](http://pan.oxfordjournals.org/content/9/4/385.short)).  
-
-
-- La publicación de efectos nulos esta desapareciendo en el tiempo, en todas las disciplinas ([Fanelli 2011](http://link.springer.com/article/10.1007/s11192-011-0494-7)).  
-
-Evidencia que mide la magnitud del sesgo de publicación: 
-
-- Estudio que  siguió a experimentos completados muestra que aquellos experimentos con fuertes resultados son 40pp más probable de ser publicados, y 60pp más probable de ser escritos. Alto "file drawer problem". ([Franco et al 2014](http://science.sciencemag.org/content/345/6203/1502))
-
-- En economía [Andrews and Kasy (2019)](https://www.aeaweb.org/articles?id=10.1257/aer.20180310) estiman que, para algunas literaturas, los estudios que rechazan la nula son entre 3 y 30 (!) veces mas probables de ser publicados en journals top.   
-  
-
-## Sesgo de Publicacion en TESS/NSF [(Franco et al 2014)](http://science.sciencemag.org/content/345/6203/1502)  
-![](figs/Tess.PNG)
-
-## Problema #2: P-Hacking  
-<br>
-.font140[
-- Definición: flexibilidad en el análisis de datos permite presentar *casi cualquier resultado* bajo un umbral arbitrario; significancia estadística pierde sentido.
-
-- Otros nombres: "specification searching" ([Leamer 1983](http://www.econ.ucla.edu/workingpapers/wp239.pdf)), "data-fishing", grados de libertad del investigador, o "data-mining".  
-
-- No implica intencionalidad. Puede ser subconsciente, o simplemente una practica estándar del análisis estadístico ([Gelman and Loken 2013](http://www.stat.columbia.edu/~gelman/research/unpublished/p_hacking.pdf)).
-
-- Evidencia: comportamiento anomalo de test estadisticos entorno a umbrales arbitrarios.
-
-
-![](figs/GerberPS.PNG)
-
-![](figs/Brodeur_2.PNG)
-
-- Registros (o pre-pregistros)  
-- Planes de pre-analysis  
-- Reportes registrados 
-]
-
---->
+<div id="modelo-conceptual-para-aproximar-estos-problemas" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Modelo conceptual para aproximar estos problemas<a href="invetica.html#modelo-conceptual-para-aproximar-estos-problemas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Un modelo muy útil para entender estos problemas claves fue desarrollado por <span class="citation">Ioannidis (<a href="#ref-ioannidis2005most">2005</a>)</span> en su artículo <em>“Why Most Published Research Findings Are False”</em>. Este artítculo proporciona un marco teórico para entender por qué una gran proporción de los hallazgos científicos pueden ser falsos positivos. Este modelo se fundamenta en la estadística bayesiana y en varias consideraciones prácticas del proceso de investigación.</p>
+<p>Específicamente este modelo estima el valor predictivo positivo (<em>positive predictive value o PPV</em>) de la investigación. Esto es simplemente la probabilidad post-hoc de que un resultado sea verdadero condicional a que el test de hipótesis es significativo. Es decir</p>
+<p><span class="math display">\[
+PPV = Pr(V | S)
+\]</span>
+donde <span class="math inline">\(V\)</span> indica que la hipótesis es verdadera, y S que el resultado del test estadístico es significativo, es decir, si <span class="math inline">\(T\)</span> es el test estadístico observado y <span class="math inline">\(\tau_{\alpha}\)</span> es el punto de corte relevante, tenemos que <span class="math inline">\(T&gt;\tau_{\alpha}\)</span>.</p>
+<p>Definamos <span class="math inline">\(R\)</span> como la relación entre el número de “relaciones verdaderas” y “ninguna relación” entre las hipótesis comúnmente estudiadas en una disciplina. A partir de ella podemos definir que la probabilidad de que una relación verdadera para una dada hipótesis exista <strong>antes</strong> que un estudio sea llevado a cabo.</p>
+<p><span class="math display">\[
+P(V) = \frac{R}{R+1}
+\]</span></p>
+<p>podemos entonces usar el teorema de Bayes y la tabla de contingencia del recuadro anterior para derivar la <span class="math inline">\(PPV\)</span></p>
+<p><span class="math display">\[ P(V | S) = \frac{P(S | V) \cdot P(V)}{P(S)} \]</span></p>
+<p>Con esto tenemos que <span class="math inline">\(P(S | V)\)</span>, la probabilidad de obtener un resultado significativo si el hallazgo es verdadero, es <span class="math inline">\(1 - \beta\)</span> y que <span class="math inline">\(P(S | F)\)</span>, la probabilidad de obtener un resultado significativo si el hallazgo es falso, es <span class="math inline">\(\alpha\)</span>. Con un poco de matematica obtenemos que</p>
+<p><span class="math display">\[PPV =  P(V | S) = \frac{(1 - \beta) \cdot R}{(1 - \beta) \cdot R + \alpha } \]</span></p>
+<p>De la ecuación, se puede ver que cuanto mayor sea la potencia del estudio (mayor <span class="math inline">\(1 - \beta\)</span>) y más estricto sea el nivel de significancia estadística (menor <span class="math inline">\(\alpha\)</span>), más cercano estará el <span class="math inline">\(PPV\)</span> a 1, eliminando en gran medida los falsos positivos. Al nivel de significancia usual de <span class="math inline">\(\alpha = 0.05\)</span> y en un estudio bien potenciado (<span class="math inline">\(1 - \beta = 0.80\)</span>) en una literatura donde se piensa que un tercio de todas las hipótesis son verdaderas ex ante (<span class="math inline">\(R_i = 0.5\)</span>), el <span class="math inline">\(PPV\)</span> es relativamente alto, alcanzando un 89 por ciento.</p>
+<p>Sin embargo, la realidad es considerablemente más complicada y, como describe <span class="citation">Ioannidis (<a href="#ref-ioannidis2005most">2005</a>)</span>, podría llevar a tasas mucho más altas de falsos positivos en la práctica debido a la presencia de estudios con bajo poder estadístico, búsqueda de especificaciones, sesgo del investigador y el sesgo de publicación,</p>
+<p>Discutimos estas extensiones a continuación. Empezamos con el tema del poder estadístico. En economía empírica, <span class="citation">Doucouliagos, Stanley, and Giles (<a href="#ref-doucouliagos2012estimates">2012</a>)</span>, <span class="citation">Ioannidis, Stanley, and Doucouliagos (<a href="#ref-ioannidis2017power">2017</a>)</span>, y otros han documentado que los estudios, en la práctica, tiene bajo poder estadístico. Por ejemplo, <span class="citation">Ioannidis, Stanley, and Doucouliagos (<a href="#ref-ioannidis2017power">2017</a>)</span> argumenta que el poder mediano de los estudios en economía es alrededor del 18% lo que implica que el PPV es de <span class="math inline">\(64\%\)</span>, es decir que el <span class="math inline">\(36\%\)</span> de los resultados son falsos positivos. Más aun si se utilizan rutinariamente estudios con baja potencia para probar hipótesis que probablemente son falsas, la tasa de falsos positivos puede superar el 50 por ciento (por ejemplo, poder = 0.20 y <span class="math inline">\(R_i = 0.2\)</span> da un <span class="math inline">\(PPV = 0.44\)</span>).</p>
+<p>Este problema, y otros más, se ven exacerbadas si existe sesgo de publicación. <span class="citation">Ioannidis (<a href="#ref-ioannidis2005most">2005</a>)</span> extieende el modelo para incluir la posibilidad de sesgo del investigador, que peude tomar varias formas incluidas cualquier combinación de manipulación de datos, búsqueda de especificaciones, informes selectivos, e incluso fraude. Si incorporamos este sesgo como un termino <span class="math inline">\(u\)</span>, la expresión anterior queda</p>
+<p><span class="math display">\[
+PPV= \frac{(1 - \beta) \cdot R + u \beta R}{(1 - \beta) \cdot R + \alpha + u\beta R + u(1- \alpha)}
+\]</span>
+Aquí, el número real de relaciones verdaderas (el numerador) permanece casi sin cambios, aunque hay un término adicional que captura los efectos del sesgo del investigador. Si volvemos al caso de <span class="math inline">\(R_i = 0.5\)</span>, y el nivel de significancia usual del 5 por ciento, pero ahora asumimos que el sesgo del autor es relativamente bajo, al 10 por ciento, el <span class="math inline">\(PPV\)</span> cae del 83 por ciento al 65 por ciento. Si el 30 por ciento de los autores presentan sesgo en su presentación de resultados, el <span class="math inline">\(PPV\)</span> cae dramáticamente al 49 por ciento, lo que significa que la mitad de los efectos significativos reportados son en realidad falsos positivos.</p>
+<p>La figura @ref{fig:ppv}, obtenida de <span class="citation">Ioannidis (<a href="#ref-ioannidis2005most">2005</a>)</span>, presenta una gama de valores de parámetros y el <span class="math inline">\(PPV\)</span> resultante. El término <span class="math inline">\(R_i\)</span> puede variar entre campos de investigación, donde las literaturas que están en una etapa más temprana y, por lo tanto, más exploratoria, presumiblemente tienen menores probabilidades de relaciones verdaderas.</p>
+<div id="fig:ppv" class="section level4 hasAnchor" number="3.3.1.1">
+<h4><span class="header-section-number">3.3.1.1</span> Valor predictivo positivo para distintas comibnaciones de parámetros<a href="invetica.html#fig:ppv" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="figs/ioannidis.png" alt="PPV" />
+<em>Nota: Esta figura fue tomada de</em> <span class="citation">Ioannidis (<a href="#ref-ioannidis2005most">2005</a>)</span></p>
+<p>Este marco simple resalta varios de los problemas de la investigación empírica, con el mismo <span class="citation">Ioannidis (<a href="#ref-ioannidis2005most">2005</a>)</span> concluyendo que la mayoría de los hallazgos publicados en medicina probablemente sean falsos. Esto es posible que también suceda en otras disciplinas aunque es difícil hacer una afirmación similar dada la dificultad de cuantificar algunos de los parámetros clave en el modelo. Sin embargo, este ejercicio plantea preocupaciones importantes sobre la fiabilidad de los hallazgos en muchas campos.</p>
+<p>Con este marco en mente, veamos evidencia empírica de múltiples campos que sugieren la presencia de sesgo de publicación y otros de los problemas anteriormente discutidos para luego presentar soluciones para resolverlos.</p>
+</div>
+</div>
+<div id="evidencia-del-problema" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Evidencia del problema<a href="invetica.html#evidencia-del-problema" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="sesgos-de-publicación" class="section level4 hasAnchor" number="3.3.2.1">
+<h4><span class="header-section-number">3.3.2.1</span> Sesgos de publicación<a href="invetica.html#sesgos-de-publicación" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>El sesgo de publicación surge si el resultado de un estudio influye sistemáticamente en su probabilidad de ser publicado. Usualmente, se espera que este sesgo funcione en contra de los estudios que no rechazan la hipótesis nula, ya que estos típicamente “serían” menos interesantes de ser publicados.</p>
+<p>Sin embargo, si como investigadores somos incapaces de rastrear el cuerpo completo de pruebas estadísticas que se han realizado, incluidas aquellas que no rechazan la nula (y, por lo tanto, son menos probables de ser publicadas), entonces no podemos determinar la verdadera proporción de pruebas en una literatura que rechazan la nula. Por lo tanto, es crucial entender cuántas pruebas y análisis se han realizado en toda la comunidad académica.</p>
+<p><span class="citation">Sterling (<a href="#ref-sterling1959publication">1959</a>)</span> en un breve artículo fue el primero en señalar el problema, advirtiendo que “cuando se usa un nivel fijo de significancia como criterio crítico para seleccionar que resultados difundir, puede resultar en resultados imprevistos.” Mas recientemente <span class="citation">Franco, Malhotra, and Simonovits (<a href="#ref-franco2014publication">2014</a>)</span> documentaron que una gran parte de los análisis empíricos en las ciencias sociales nunca se publican o ni siquiera se escriben, y que la probabilidad de que un hallazgo sea compartido con la comunidad en general disminuye drásticamente para los “hallazgos nulos” (es decir, hallazgos que no son estadísticamente significativos). <span class="citation">Franco, Malhotra, and Simonovits (<a href="#ref-franco2014publication">2014</a>)</span> examinaron los estudios que pasaron la revisión por pares y fueron incluidos en la encuesta TESS (time-sharing experiments for the social sciences) financiados por la National Science Foundation.</p>
+<p>TESS financió estudios en diversos campos de las ciencias sociales y <span class="citation">Franco, Malhotra, and Simonovits (<a href="#ref-franco2014publication">2014</a>)</span> rastrearon con éxito casi todos los estudios originales a lo largo del tiempo, registrando la naturaleza de los resultados empíricos así como la publicación final del estudio. La figura @ref{fig:mervis} resume los resultados hallados.</p>
+</div>
+<div id="fig:merivs" class="section level4 hasAnchor" number="3.3.2.2">
+<h4><span class="header-section-number">3.3.2.2</span> Mayoria de resultados nulos nunca son publicados<a href="invetica.html#fig:merivs" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p><img src="figs/Mervis.png" alt="PPV" />
+<em>Nota: Esta figura fue tomada de</em> <span class="citation">Mervis (<a href="#ref-mervis2014null">2014</a>)</span></p>
+<p>La figura muestra un patrón empírico sorprendente: los estudios donde la prueba principal de hipótesis arrojó resultados nulos tienen 40 puntos porcentuales menos de probabilidad de ser publicados en una revista que un resultado fuertemente significativo, y 60 puntos porcentuales menos de probabilidad de ser escritos. Este hallazgo tiene implicaciones potencialmente severas para nuestra comprensión de los hallazgos en cuerpos enteros de investigación en ciencias sociales, si los ceros nunca son vistos por otros académicos, incluso en forma de documento de trabajo. Esto implica que el <span class="math inline">\(PPV\)</span> de la investigación es probablemente más bajo de lo que sería de otra manera, y también tiene implicaciones negativas para la validez de los meta-análisis, si los resultados nulos no son conocidos por los académicos que intentan sacar conclusiones más amplias sobre un cuerpo de evidencia.</p>
+</div>
+<div id="búsqueda-de-especificaciones" class="section level4 hasAnchor" number="3.3.2.3">
+<h4><span class="header-section-number">3.3.2.3</span> Búsqueda de especificaciones<a href="invetica.html#búsqueda-de-especificaciones" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Estrechamente ligado al problema de sesgo de publicación está el de búsqueda de especificación. La búsqueda de especificación se refiere a la flexibilidad en el análisis de datos que permite presentar <em>casi cualquier resultado</em> bajo un umbral arbitrario. Esta práctica puede llevar a que la significancia estadística pierda su sentido, ya que los investigadores pueden ajustar su metodología hasta obtener resultados que alcancen el umbral deseado. Andrew Gelman y Erik Loken <span class="citation">(<a href="#ref-gelman2013garden">Gelman and Loken 2013</a>)</span> lo resumen de una forma muy elocuente</p>
+<blockquote>
+<p>Un conjunto de datos puede ser analizado de tantas formas diferentes (con las opciones que no son solo qué prueba estadística realizar sino también decisiones sobre qué datos incluir o excluir, qué medidas estudiar, qué interacciones considerar, etc.), que muy poca información es proporcionada cuando se afirma que un estudio obtuvo un resultado p &lt; .05.</p>
+</blockquote>
+<p>Esta práctica también es conocida como “p-hacking”, “specification searching”, “data-fishing”, grados de libertad del investigador, o “data-mining”. Estos términos reflejan la misma preocupación: la manipulación de los datos hasta que se obtienen resultados significativos.</p>
+<p>Es importante destacar que la búsqueda de especificación no implica necesariamente una intención maliciosa. Puede ser subconsciente o simplemente una práctica estándar del análisis estadístico <span class="citation">(<a href="#ref-gelman2013garden">Gelman and Loken 2013</a>)</span>. Los investigadores, a menudo sin darse cuenta, pueden probar múltiples enfoques analíticos y seleccionar aquellos que producen resultados estadísticamente significativos.</p>
+<p>Hay evidencia de comportamiento anómalo de pruebas estadísticas alrededor de umbrales arbitrarios, lo que sugiere la prevalencia de la búsqueda de especificación. Esto se puede observar en los gráficos que muestran acumulaciones inusuales de resultados justo por encima de los umbrales de significancia estándar, como el valor p de 0.05.</p>
+</div>
+<div id="fig:gerber" class="section level4 hasAnchor" number="3.3.2.4">
+<h4><span class="header-section-number">3.3.2.4</span> Estadisticos Z de revistas academicas top<a href="invetica.html#fig:gerber" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="float">
+<img src="figs/GerberPS.PNG" alt="GerberPS" />
+<div class="figcaption">GerberPS</div>
+</div>
+<p><img src="figs/GerberSoc.PNG" alt="GerberSoc" />
+<em>Nota: Esta figura fueron tomads de</em> <span class="citation">A. Gerber, Malhotra, et al. (<a href="#ref-gerber2008statistical">2008</a>)</span> y <span class="citation">A. S. Gerber and Malhotra (<a href="#ref-gerber2008publication">2008</a>)</span></p>
+<p>Estos gráficos ilustran cómo los resultados tienden a agruparse alrededor de los umbrales de significancia, lo que sugiere que los investigadores pueden estar ajustando sus análisis hasta alcanzar estos umbrales, en lugar de seguir una metodología predefinida y rigurosa.</p>
+<p>Es importante notar, que mientras que el sesgo de publicación implica una distorsión de un cuerpo de múltiples estudios de investigación, el sesgo también es posible dentro de un estudio dado. En las décadas de 1980 y 1990, el acceso a computadores mas potentes y nuevas bases de datos ha llevado a preocupaciones crecientes de que algunos investigadores estaban realizando un número cada vez mayor de análisis y reportando selectivamente aquellos análisis que apoyaban nociones preconcebidas, o que eran vistos como particularmente interesantes dentro de la comunidad investigadora, e ignorando, conscientemente o no, otras especificaciones que no lo hacían. Las preocupaciones sobre la búsqueda de especificaciones solo se han vuelto más prominentes en décadas mas recientes.</p>
+<p>En resumen, la búsqueda de especificación es una práctica preocupante en el análisis de datos que puede comprometer la validez de los resultados de investigación. Es fundamental que los investigadores reconozcamos este problema y adoptemos medidas para minimizar su impacto, como pre registrar estudios y mantener una transparencia total en los procesos analíticos.</p>
 
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div class="csl-entry">
@@ -460,16 +386,33 @@ Anderson, Melissa S, Brian C Martinson, and Raymond De Vries. 2007. <span>“Nor
 Banerjee, Amitav, UB Chitnis, SL Jadhav, JS Bhawalkar, and S Chaudhury. 2009. <span>“Hypothesis Testing, Type i and Type II Errors.”</span> <em>Industrial Psychiatry Journal</em> 18 (2): 127–31.
 </div>
 <div class="csl-entry">
-Chang, Andrew C, and Phillip Li. 2015. <span>“Is Economics Research Replicable? Sixty Published Papers from Thirteen Journals Say’usually Not’.”</span>
+Doucouliagos, Chris, Tom D Stanley, and Margaret Giles. 2012. <span>“Are Estimates of the Value of a Statistical Life Exaggerated?”</span> <em>Journal of Health Economics</em> 31 (1): 197–206.
 </div>
 <div class="csl-entry">
-Dewald, William G, Jerry G Thursby, and Richard G Anderson. 1986. <span>“Replication in Empirical Economics: The Journal of Money, Credit and Banking Project.”</span> <em>The American Economic Review</em>, 587–603.
+Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. <span>“Publication Bias in the Social Sciences: Unlocking the File Drawer.”</span> <em>Science</em> 345 (6203): 1502–5.
+</div>
+<div class="csl-entry">
+Gelman, Andrew, and Eric Loken. 2013. <span>“The Garden of Forking Paths: Why Multiple Comparisons Can Be a Problem, Even When There Is No <span>‘Fishing Expedition’</span> or <span>‘p-Hacking’</span> and the Research Hypothesis Was Posited Ahead of Time.”</span> <em>Department of Statistics, Columbia University</em> 348 (1-17): 3.
+</div>
+<div class="csl-entry">
+Gerber, Alan S, and Neil Malhotra. 2008. <span>“Publication Bias in Empirical Sociological Research: Do Arbitrary Significance Levels Distort Published Results?”</span> <em>Sociological Methods &amp; Research</em> 37 (1): 3–30.
+</div>
+<div class="csl-entry">
+Gerber, Alan, Neil Malhotra, et al. 2008. <span>“Do Statistical Reporting Standards Affect What Is Published? Publication Bias in Two Leading Political Science Journals.”</span> <em>Quarterly Journal of Political Science</em> 3 (3): 313–26.
 </div>
 <div class="csl-entry">
 Ioannidis, John PA. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2 (8): e124.
 </div>
 <div class="csl-entry">
-McCullough, Bruce D, and Hrishikesh D Vinod. 2003. <span>“Verifying the Solution from a Nonlinear Solver: A Case Study.”</span> <em>American Economic Review</em> 93 (3): 873–92.
+Ioannidis, John PA, Tom D Stanley, and Hristos Doucouliagos. 2017. <span>“The Power of Bias in Economics Research.”</span> Oxford University Press Oxford, UK.
+</div>
+<div class="csl-entry">
+Mervis, Jeffrey. 2014. <span>“Why Null Results Rarely See the Light of Day.”</span> American Association for the Advancement of Science.
+</div>
+<div class="csl-entry">
+Sterling, Theodore D. 1959. <span>“Publication Decisions and Their Possible Effects on Inferences Drawn from Tests of Significance—or Vice Versa.”</span> <em>Journal of the American Statistical Association</em> 54 (285): 30–34.
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -482,8 +425,32 @@ Anderson, Melissa S, Brian C Martinson, and Raymond De Vries. 2007. <span>“Nor
 <div id="ref-banerjee2009hypothesis" class="csl-entry">
 Banerjee, Amitav, UB Chitnis, SL Jadhav, JS Bhawalkar, and S Chaudhury. 2009. <span>“Hypothesis Testing, Type i and Type II Errors.”</span> <em>Industrial Psychiatry Journal</em> 18 (2): 127–31.
 </div>
+<div id="ref-doucouliagos2012estimates" class="csl-entry">
+Doucouliagos, Chris, Tom D Stanley, and Margaret Giles. 2012. <span>“Are Estimates of the Value of a Statistical Life Exaggerated?”</span> <em>Journal of Health Economics</em> 31 (1): 197–206.
+</div>
+<div id="ref-franco2014publication" class="csl-entry">
+Franco, Annie, Neil Malhotra, and Gabor Simonovits. 2014. <span>“Publication Bias in the Social Sciences: Unlocking the File Drawer.”</span> <em>Science</em> 345 (6203): 1502–5.
+</div>
+<div id="ref-gelman2013garden" class="csl-entry">
+Gelman, Andrew, and Eric Loken. 2013. <span>“The Garden of Forking Paths: Why Multiple Comparisons Can Be a Problem, Even When There Is No <span>‘Fishing Expedition’</span> or <span>‘p-Hacking’</span> and the Research Hypothesis Was Posited Ahead of Time.”</span> <em>Department of Statistics, Columbia University</em> 348 (1-17): 3.
+</div>
+<div id="ref-gerber2008publication" class="csl-entry">
+Gerber, Alan S, and Neil Malhotra. 2008. <span>“Publication Bias in Empirical Sociological Research: Do Arbitrary Significance Levels Distort Published Results?”</span> <em>Sociological Methods &amp; Research</em> 37 (1): 3–30.
+</div>
+<div id="ref-gerber2008statistical" class="csl-entry">
+Gerber, Alan, Neil Malhotra, et al. 2008. <span>“Do Statistical Reporting Standards Affect What Is Published? Publication Bias in Two Leading Political Science Journals.”</span> <em>Quarterly Journal of Political Science</em> 3 (3): 313–26.
+</div>
 <div id="ref-ioannidis2005most" class="csl-entry">
 Ioannidis, John PA. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2 (8): e124.
+</div>
+<div id="ref-ioannidis2017power" class="csl-entry">
+Ioannidis, John PA, Tom D Stanley, and Hristos Doucouliagos. 2017. <span>“The Power of Bias in Economics Research.”</span> Oxford University Press Oxford, UK.
+</div>
+<div id="ref-mervis2014null" class="csl-entry">
+Mervis, Jeffrey. 2014. <span>“Why Null Results Rarely See the Light of Day.”</span> American Association for the Advancement of Science.
+</div>
+<div id="ref-sterling1959publication" class="csl-entry">
+Sterling, Theodore D. 1959. <span>“Publication Decisions and Their Possible Effects on Inferences Drawn from Tests of Significance—or Vice Versa.”</span> <em>Journal of the American Statistical Association</em> 54 (285): 30–34.
 </div>
 </div>
             </section>

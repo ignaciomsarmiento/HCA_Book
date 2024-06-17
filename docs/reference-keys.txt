@@ -15,3 +15,14 @@ normas-en-la-práctica
 tab:normascontranormas
 fig:anderson_fig
 problemas
+modelo-conceptual-para-aproximar-estos-problemas
+fig:ppv
+evidencia-del-problema
+sesgos-de-publicación
+fig:merivs
+búsqueda-de-especificaciones
+sesgo-en-las-publicaciones
+en-la-practica-anderson-et-al-2007
+sesgo-de-publicacion-en-tessnsf-franco-et-al-2014
+problema-2-p-hacking
+fig:gerber
