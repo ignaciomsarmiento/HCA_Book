@@ -1,8 +1,6 @@
-# Flujo de Trabajo Reproducible
+# Soluciones: Reproducibilidad y Transparencia  en los procesos analíticos
 
-El trabajo con datos a menudo requiere miles o decenas de miles de líneas de código. Por lo tanto, para trabajar de manera transparente, debemos  adoptar tanto las técnicas estadísticas y metodológicas reproducibles, como las prácticas de flujo de trabajo y software que hagan que nuestro trabajo sea fácilmente reproducible por otros académicos. 
 
-El objetivo de este capítulo es introducir las prácticas más importantes en este ámbito. Hay varias herramientas principales que los investigadores pueden utilizar para asegurarse de que su trabajo sea reproducible. A continuación, discutimos las prácticas de flujo de trabajo. Al usar estas herramientas, un investigador se acercará al ideal de reproducibilidad de "flujo de trabajo de un solo clic": podrá volver a ejecutar todo el análisis (realizado anteriormente por otro investigador) desde cero con un solo clic o la ejecución de un solo `script`.
 
 
 
@@ -22,6 +20,13 @@ knitr::include_graphics("figs/reproducible-definition-grid.jpg")
 - Sin embargo, no es trivial saber si algo a cambiado en el tiempo
 
 - `Git` te permite hacer ambas cosas: saber si algo cambió y volver en el tiempo. Mas sobre esto en el proximo capitulo
+
+
+## Flujo de Trabajo Reproducible
+
+El trabajo con datos a menudo requiere miles o decenas de miles de líneas de código. Por lo tanto, para trabajar de manera transparente, debemos  adoptar tanto las técnicas estadísticas y metodológicas reproducibles, como las prácticas de flujo de trabajo y software que hagan que nuestro trabajo sea fácilmente reproducible por otros académicos. 
+
+El objetivo de este capítulo es introducir las prácticas más importantes en este ámbito. Hay varias herramientas principales que los investigadores pueden utilizar para asegurarse de que su trabajo sea reproducible. A continuación, discutimos las prácticas de flujo de trabajo. Al usar estas herramientas, un investigador se acercará al ideal de reproducibilidad de "flujo de trabajo de un solo clic": podrá volver a ejecutar todo el análisis (realizado anteriormente por otro investigador) desde cero con un solo clic o la ejecución de un solo `script`.
 
 ## Flujos de Trabajo
 
