@@ -26,7 +26,7 @@ Continua</p>" />
 <meta name="author" content="Ignacio Sarmiento Barbieri | Gustavo Castillo-Alvarez" />
 
 
-<meta name="date" content="2024-06-16" />
+<meta name="date" content="2024-06-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -264,6 +264,46 @@ div.csl-indent {
 <p>La búsqueda de especificación, por otro lado, ocurre cuando los investigadores exploran múltiples formas de analizar los datos dentro de un mismo estudio, y sólo reportan aquellas que muestran resultados significativos. Si imaginamos que el investigador del cómic probó 20 formas diferentes de dividir la muestra hasta encontrar una que arrojara un resultado significativo, estaríamos frente a un caso de búsqueda de especificación. Estos dos fenómenos están estrechamente relacionados: la anticipación del sesgo de publicación por parte de los investigadores fomenta la búsqueda de especificación, ya que los investigadores se sienten presionados a encontrar resultados que sean “publicables”.</p>
 <p>John Ioannidis, en su influyente artículo “Why Most Published Research Findings Are False”, argumenta que debido a estos problemas, muchos de los hallazgos publicados en la literatura científica son falsos positivos. Según Ioannidis, la combinación de estudios con bajo poder estadístico, la flexibilidad en los diseños de estudio y los análisis, y el sesgo de publicación, contribuyen a una alta tasa de resultados falsos en la investigación científica.</p>
 <p>El cómic de XKCD sirve como una representación visual simple pero potente de estos problemas. Nos recuerda que debemos ser críticos con los resultados publicados y conscientes de los sesgos y prácticas que pueden distorsionalos. Al abordar estos problemas, es esencial mejorar la transparencia en la investigación, promover la publicación de todos los resultados, y adoptar prácticas estadísticas más rigurosas para reducir la prevalencia de falsos positivos y fortalecer la fiabilidad de nuestros hallazgos.</p>
+<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+<p><b> Falsos Positivos en Tests de Hipótesis </b></p>
+<p>Una hipótesis (por ejemplo, “El aumento del salario mínimo está asociado con una disminución en la tasa de desempleo”) es verdadera o falsa en el mundo real. Debido a que el investigador no puede estudiar a todas las personas afectadas, debe probar la hipótesis en una muestra de esa población objetivo. No importa cuántos datos recoja el investigador, nunca podrá probar (o refutar) su hipótesis de manera absoluta. Siempre existirá la necesidad de hacer inferencias sobre los fenómenos en la población a partir de los eventos observados en la muestra <span class="citation">(<a href="#ref-banerjee2009hypothesis">Banerjee et al. 2009</a>)</span>. Los errores son inevitables hasta cierto punto en el proceso de tests de hipótesis debido a las limitaciones inherentes a la investigación y al análisis de datos.</p>
+<p>Por ejemplo, pensemos en la siguiente analogía, al igual que un juez en un juicio, el investigador debe tomar una decisión basada en la evidencia disponible. Un juez comienza presumiendo la inocencia del acusado y solo rechaza esta presunción si hay pruebas suficientes más allá de una duda razonable. De manera similar, el investigador empieza asumiendo la hipótesis nula (<span class="math inline">\(H_0\)</span>). Utilizando pruebas estadísticas, el investigador debe determinar si hay suficiente evidencia para rechazar <span class="math inline">\(H_0\)</span> en favor de la hipótesis alternativa (<span class="math inline">\(H_1\)</span>). Aun así, siempre existe la posibilidad de error, condenando a un inocente (error de Tipo I) o liberando a un culpable (error de Tipo II), lo cual refleja la naturaleza incierta de la inferencia estadística.</p>
+<p>Podemos resumir este proceso en la siguiente tabla de contingencia:</p>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="39%" />
+<col width="36%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Decisión sobre <span class="math inline">\(H_0\)</span></th>
+<th>La hipótesis nula (<span class="math inline">\(H_0\)</span>) es verdadera</th>
+<th>La hipótesis nula (<span class="math inline">\(H_0\)</span>) es falsa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>No rechazar <span class="math inline">\(H_0\)</span></td>
+<td>Inferencia correcta (verdadero negativo)<br>(probabilidad = <span class="math inline">\(1−\alpha\)</span>)</td>
+<td><span style="color: violet;">Error de Tipo II (falso negativo)<br>(probabilidad = <span class="math inline">\(\beta\)</span>)</span></td>
+</tr>
+<tr class="even">
+<td>Rechazar <span class="math inline">\(H_0\)</span></td>
+<td><span style="color: red;">Error de Tipo I (falso positivo)<br>(probabilidad = <span class="math inline">\(\alpha\)</span>)</span></td>
+<td>Inferencia correcta (verdadero positivo)<br>(probabilidad = <span class="math inline">\(1−\beta\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<p>En el contexto de los tests de hipótesis, un falso positivo ocurre cuando se rechaza incorrectamente la hipótesis nula (<span class="math inline">\(H_0\)</span>) a favor de la hipótesis alternativa (<span class="math inline">\(H_1\)</span>). En otras palabras, el test indica un resultado significativo cuando, en realidad, no lo es. Este error es conocido como error de Tipo I y se denota por <span class="math inline">\(\alpha\)</span>, que representa la probabilidad de cometer un falso positivo.</p>
+<p>En otras palabras, si el test no lleva a <strong>No rechazar <span class="math inline">\(H_0\)</span></strong> puede ser que estemos:
+- Haciendo: <strong>Inferencia correcta (verdadero negativo) (probabilidad = <span class="math inline">\(1−\alpha\)</span>)</strong>: La prueba correctamente no rechaza <span class="math inline">\(H_0\)</span> cuando <span class="math inline">\(H_0\)</span> es verdadera. Es la probabilidad de no cometer un error de Tipo I.
+- Cometiendo <strong><span style="color: violet;">Error de Tipo II (falso negativo) (probabilidad = <span class="math inline">\(\beta\)</span>)</span></strong>: La prueba no rechaza <span class="math inline">\(H_0\)</span> cuando <span class="math inline">\(H_1\)</span> es verdadera. Este es el error de Tipo II.</p>
+<p>En casos contrario, si <strong>Rechazamos <span class="math inline">\(H_0\)</span></strong> puede que estemos:
+- Cometiendo <strong><span style="color: red;">Error de Tipo I (falso positivo) (probabilidad = <span class="math inline">\(\alpha\)</span>)</span></strong>: La prueba incorrectamente rechaza <span class="math inline">\(H_0\)</span> cuando <span class="math inline">\(H_0\)</span> es verdadera. Esta es la tasa de error de Tipo I.
+- Haciendo <strong>Inferencia correcta (verdadero positivo) (probabilidad = <span class="math inline">\(1−\beta\)</span>)</strong>: La prueba correctamente rechaza <span class="math inline">\(H_0\)</span> cuando <span class="math inline">\(H_1\)</span> es verdadera. Esta es la potencia del test, que es 1 menos la probabilidad de cometer un error de Tipo II (<span class="math inline">\(\beta\)</span>).</p>
+<p>En resumen, los <span style="color: red;">falsos positivos (<span class="math inline">\(\alpha\)</span>)</span> son situaciones donde el test sugiere incorrectamente la existencia de</p>
+</div>
 <!--
 
 
@@ -417,7 +457,19 @@ Evidencia que mide la magnitud del sesgo de publicación:
 Anderson, Melissa S, Brian C Martinson, and Raymond De Vries. 2007. <span>“Normative Dissonance in Science: Results from a National Survey of US Scientists.”</span> <em>Journal of Empirical Research on Human Research Ethics</em> 2 (4): 3–14.
 </div>
 <div class="csl-entry">
+Banerjee, Amitav, UB Chitnis, SL Jadhav, JS Bhawalkar, and S Chaudhury. 2009. <span>“Hypothesis Testing, Type i and Type II Errors.”</span> <em>Industrial Psychiatry Journal</em> 18 (2): 127–31.
+</div>
+<div class="csl-entry">
+Chang, Andrew C, and Phillip Li. 2015. <span>“Is Economics Research Replicable? Sixty Published Papers from Thirteen Journals Say’usually Not’.”</span>
+</div>
+<div class="csl-entry">
+Dewald, William G, Jerry G Thursby, and Richard G Anderson. 1986. <span>“Replication in Empirical Economics: The Journal of Money, Credit and Banking Project.”</span> <em>The American Economic Review</em>, 587–603.
+</div>
+<div class="csl-entry">
 Ioannidis, John PA. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2 (8): e124.
+</div>
+<div class="csl-entry">
+McCullough, Bruce D, and Hrishikesh D Vinod. 2003. <span>“Verifying the Solution from a Nonlinear Solver: A Case Study.”</span> <em>American Economic Review</em> 93 (3): 873–92.
 </div>
 </div>
 </div>
@@ -426,6 +478,9 @@ Ioannidis, John PA. 2005. <span>“Why Most Published Research Findings Are Fals
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-anderson2007normative" class="csl-entry">
 Anderson, Melissa S, Brian C Martinson, and Raymond De Vries. 2007. <span>“Normative Dissonance in Science: Results from a National Survey of US Scientists.”</span> <em>Journal of Empirical Research on Human Research Ethics</em> 2 (4): 3–14.
+</div>
+<div id="ref-banerjee2009hypothesis" class="csl-entry">
+Banerjee, Amitav, UB Chitnis, SL Jadhav, JS Bhawalkar, and S Chaudhury. 2009. <span>“Hypothesis Testing, Type i and Type II Errors.”</span> <em>Industrial Psychiatry Journal</em> 18 (2): 127–31.
 </div>
 <div id="ref-ioannidis2005most" class="csl-entry">
 Ioannidis, John PA. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2 (8): e124.
@@ -491,6 +546,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
