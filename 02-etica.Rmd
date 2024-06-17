@@ -78,9 +78,9 @@ En este trabajo ademas de preguntarle sobre  las cuatro normas de Merton, agrego
 
 | **Norma**                | **Descripción**                                                                        | **Contranorma**          | **Descripción**                                                                  |
 |--------------------------|----------------------------------------------------------------------------------------|--------------------------|----------------------------------------------------------------------------------|
-| **Comunalidad**          | Los científicos comparten abiertamente sus hallazgos con colegas.                      | **Secreto**              | Los científicos protegen sus hallazgos más recientes para asegurar prioridad en la publicación, patente o aplicaciones. |
 | **Universalismo**        | Los científicos evalúan la investigación solo en función de su mérito.                 | **Particularismo**       | Los científicos evalúan el nuevo conocimiento y sus aplicaciones basándose en la reputación y productividad pasada del individuo o grupo de investigación. |
-| **Desinteresado**        | Los científicos están motivados por el deseo de conocimiento y descubrimiento.         | **Interesado**           | Los científicos compiten con otros en el mismo campo por financiamiento y reconocimiento de sus logros. |
+| **Comunalismo**          | Los científicos comparten abiertamente sus hallazgos con colegas.                      | **Secretismo**              | Los científicos protegen sus hallazgos más recientes para asegurar prioridad en la publicación, patente o aplicaciones. |
+| **Desinterés**        | Los científicos están motivados por el deseo de conocimiento y descubrimiento.         | **Interés**           | Los científicos compiten con otros en el mismo campo por financiamiento y reconocimiento de sus logros. |
 | **Escepticismo Organizado** | Los científicos consideran todas las nuevas evidencias, hipótesis, teorías e innovaciones, incluso aquellas que desafían o contradicen su propio trabajo. | **Dogmatismo Organizado** | Los científicos invierten sus carreras en promover sus hallazgos, teorías o innovaciones más importantes. |
 | **Gobernanza**           | Los científicos son responsables de la dirección y control de la ciencia a través de la gobernanza, la autorregulación y la revisión por pares. | **Administración**       | Los científicos dependen de los administradores para dirigir la empresa científica a través de decisiones de gestión. |
 | **Calidad**              | Los científicos juzgan las contribuciones de los demás a la ciencia principalmente en función de la calidad. | **Cantidad**             | Los científicos evalúan el trabajo de los demás principalmente en función del número de publicaciones y subvenciones. |
@@ -88,7 +88,7 @@ En este trabajo ademas de preguntarle sobre  las cuatro normas de Merton, agrego
 
 
 
-La figura  \@ref(tab:anderson_fig) muestra los porcentajes de los científicos en dos etapas de su carrera (inicio y mitad) que tienen puntuaciones normativas y contranormativas en tres categorías: suscripción, comportamiento propio y comportamiento de otros.
+La figura  \@ref(fig:anderson_fig) muestra los porcentajes de los científicos en dos etapas de su carrera (inicio y mitad) que tienen puntuaciones normativas y contranormativas en tres categorías: suscripción, comportamiento propio y comportamiento de otros.
 
 ###  Normas versus contranormas en la práctica {#fig:anderson_fig}
 ![Dissonancia Normativa](figs/Anderson.png)
