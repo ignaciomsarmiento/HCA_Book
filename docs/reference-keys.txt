@@ -26,3 +26,15 @@ en-la-practica-anderson-et-al-2007
 sesgo-de-publicacion-en-tessnsf-franco-et-al-2014
 problema-2-p-hacking
 fig:gerber
+soluciones-usar-toda-la-evidencia-disponible
+registo-de-estudios
+que-incluir-en-un-pap
+inv_etica
+preanalisis
+registo-y-planes-de-analisis-previos
+registros-de-estudios
+fig:turner
+planes-de-analisis-previos
+qué-incluir-en-un-planes-de-análisis-previo-pap
+paps-y-los-reportes-registrados
+fig:registered
