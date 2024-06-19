@@ -16,7 +16,6 @@ En este libro vamos a definir como investigación reproducible como el trabajo q
 
 
 
-
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 <b> Reglas a recordar </b>
 
@@ -99,7 +98,7 @@ Complex Project Folder Estructure/
  
 
 
-#### Creando la estructura de proyecto automáticamente
+### Creando la estructura de proyecto automáticamente
 
 Una opción para la creación de esta estructura es simplemente tener un script que lo hace por nosotros. Para ello utilizaremos un `script` en `Bash` que crea la estructura de carpetas descriptas anteriormente. 
 
@@ -208,7 +207,7 @@ EOL
 echo "¡Carpetas y README.txt creados exitosamente!"
 
 ```
-##### Cómo Ejecutar el Script en Windows
+#### Cómo Ejecutar el Script en Windows
 
 
 Sí, puedes usar GitHub Desktop para instalar Git Bash y ejecutar scripts de Bash en Windows. Aquí están las instrucciones detalladas:
@@ -231,7 +230,7 @@ Sí, puedes usar GitHub Desktop para instalar Git Bash y ejecutar scripts de Bas
   
 
 
-##### Cómo Ejecutar el Script en Mac
+#### Cómo Ejecutar el Script en Mac
 
 1. **Paso 1**: Crear y guardar el Script. Abre un editor de texto, copia el `script` y guárdalo con la extensión `.sh`, por ejemplo, `create_folders.sh`.
 
@@ -350,36 +349,43 @@ Ahora, cuando compartas el Proyecto con un colaborador, las rutas de archivo par
 Cómo nombras archivos y directorios puede no parecer un punto importante, pero puede causar un gran dolor de cabeza si intentas usar código para automatizar procesos, y en el mejor de los casos, solo ralentiza las cosas. Hay una ciencia para elegir buenos nombres de archivos también.
 
 En general, es útil nombrar los archivos de código con un título corto y útil que describa su función, junto con un número al principio, para que el orden de ejecución de los archivos de código sea claro, como:
+```
+01-importar-limpiar_datos_redcap.R
+02-importar-limpiar_datos_almacen.R
+03-unir_datos_redcap_almacen.R
+```
+Estos se ordenarán y organizarán fácilmente en tu carpeta, ya que los números al principio ayudan a organizarlos.
 
-01-importar-limpiar_datos_redcap.Rmd
-02-importar-limpiar_datos_almacen.Rmd
-03-unir_datos_redcap_almacen.Rmd
+También es útil numerar y nombrar claramente tus archivos de datos. Estos generalmente deben corresponder a los archivos de código que los crearon. Al final de un paso de código, puedes guardar/escribir tu archivo de datos resultante en un archivo `*.rda` o un archivo `*.csv`, para ser cargado al inicio del siguiente archivo de código. Estos podrían verse así:
 
-Estos se ordenarán y organizarán fácilmente en tu carpeta nuevo-proyecto/codigo/, ya que los números al principio ayudan a organizarlos (mantener el 0 al principio de los números del 0 al 9 ayuda mucho en la ordenación cuando tienes más de 10 archivos).
-
-También es útil numerar y nombrar claramente tus archivos de datos. Estos generalmente deben corresponder a los archivos de código que los crearon. Al final de un paso de código, puedes guardar/escribir tu archivo de datos resultante en un archivo *.rda o un archivo *.csv, para ser cargado al inicio del siguiente archivo de código. Estos podrían verse así en la carpeta nuevo-proyecto/datos-procesados/:
-
-01-datos_limpiados_redcap.csv
-02-datos_limpiados_almacen.csv
+```
+01-datos_limpios_redcap.csv
+02-datos_limpios_almacen.csv
 03-datos_unidos_redcap_almacen.csv
+```
 
 Observa que estamos utilizando un esquema de nombres 'segmentados', de modo que los archivos tienen un patrón de nombres consistente con segmentos en el mismo orden, y los segmentos distintos están separados por guiones bajos, mientras que los segmentos informativos compuestos por más de una palabra están separados por guiones.
 
-Es sorprendentemente importante ser reflexivo sobre tu esquema de nombres segmentados desde el principio, ya que puede ayudarte de muchas maneras a organizar, ordenar y manipular archivos más adelante.
+Es sorprendentemente importante ser reflexible sobre tu esquema de nombres segmentados desde el principio, ya que puede ayudarte de muchas maneras a organizar, ordenar y manipular archivos más adelante.
 
-Puede ser tentador nombrar tus archivos code.R o myscript.R, pero deberías pensar un poco más antes de elegir un nombre para tu archivo. Tres principios importantes para nombrar archivos son los siguientes:
+Puede ser tentador nombrar tus archivos `code.R` o `myscript.R`, pero deberías pensar un poco más antes de elegir un nombre para tu archivo. Tres principios importantes para nombrar archivos son los siguientes:
 
+<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 - Debe ser legible por máquinas
 - Debe ser legible por humanos
 - Debe ordenarse bien en un directorio
+</div>
+
 
 Buenos nombres de archivos son legibles por computadoras, legibles por humanos y funcionan bien con el orden predeterminado. Desglosamos estos tres criterios uno por uno.
 
 ### Nombres de archivos legibles por computadora
 
-¿Qué hace que un nombre de archivo sea legible por computadora? Primero, los archivos legibles por computadora no contienen espacios, puntuación ni caracteres especiales. Recuerda estas sabias palabras de Aaron Quinlan, un bioinformático, ["un espacio en un nombre de archivo es un espacio en el alma de uno"](https://x.com/aaronquinlan/status/711593127551733761). Son consistentes en el uso de mayúsculas, lo que significa que siempre sigues el mismo patrón de mayúsculas, ya sea todo en minúsculas, camel case (EstoEsLoQueQuieroDecirPorCamelCase) o cualquier otro. Finalmente, los buenos nombres de archivos hacen un uso deliberado de delimitadores de texto. El uso prudente de delimitadores facilita la búsqueda de patrones cuando buscas un archivo específico. Generalmente, se recomienda usar un guion bajo (_) para delimitar unidades de metadatos y un guion (-) para delimitar palabras dentro de una unidad de metadatos. Por ejemplo, aquí hay un buen nombre de archivo legible por computadora:
+¿Qué hace que un nombre de archivo sea legible por computadora? Primero, los archivos legibles por computadora no contienen espacios, puntuación ni caracteres especiales. Recuerda estas sabias palabras de Aaron Quinlan, un bioinformático, ["un espacio en un nombre de archivo es un espacio en el alma de uno"](https://x.com/aaronquinlan/status/711593127551733761). Son consistentes en el uso de mayúsculas, lo que significa que siempre sigues el mismo patrón de mayúsculas, ya sea todo en minúsculas, camel case (`EstoEsLoQueQuieroDecirPorCamelCase`) o cualquier otro. Finalmente, los buenos nombres de archivos hacen un uso deliberado de delimitadores de texto. El uso prudente de delimitadores facilita la búsqueda de patrones cuando buscas un archivo específico. Generalmente, se recomienda usar un guion bajo (`_`) para delimitar unidades de metadatos y un guion (-) para delimitar palabras dentro de una unidad de metadatos. Por ejemplo, aquí hay un buen nombre de archivo legible por computadora:
 
-2018-04-26_ciencia-reproducible_diapositivas_leccion-01.pptx
+```
+2024-06-17_ciencia-abierta_clase-01.pptx
+```
 
 ### Nombres de archivos legibles por humanos
 
@@ -387,8 +393,7 @@ El nombre de archivo de ejemplo anterior no solo es legible por computadora, tam
 
 ### Nombres de archivos que funcionan bien con el orden predeterminado
 
-Si ordenas tus archivos alfabéticamente en una carpeta, quieres que se ordenen de una manera que tenga sentido. Ya sea que ordenes tus archivos por fecha o por un número secuencial, el número siempre va primero. Para las fechas, usa el formato AAMMDD, o tus archivos creados en abril de 1984 y 2020 estarán más cerca que los creados en marzo y abril de 2020. Si estás utilizando una numeración secuencial, agrega una cantidad sensata de ceros al frente según la cantidad de archivos de esa categoría que esperas tener en el futuro.
-
+Si ordenas tus archivos alfabéticamente en una carpeta, quieres que se ordenen de una manera que tenga sentido. Ya sea que ordenes tus archivos por fecha o por un número secuencial, el número siempre va primero. Para las fechas, usa el formato AAAAMMDD, o tus archivos creados en abril de 1984 y 2020 estarán más cerca que los creados en marzo y abril de 2020. Si estás utilizando una numeración secuencial, agrega una cantidad sensata de ceros al frente según la cantidad de archivos de esa categoría que esperas tener en el futuro.
 
 
 

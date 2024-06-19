@@ -72,3 +72,4 @@ nombrar-archivos
 nombres-de-archivos-legibles-por-computadora
 nombres-de-archivos-legibles-por-humanos
 nombres-de-archivos-que-funcionan-bien-con-el-orden-predeterminado
+palabras-finales
