@@ -1,4 +1,4 @@
-# Promoviendo Ciencia transparante  {#preanalisis}
+# Promoviendo Ciencia Transparante  {#preanalisis}
 
 
 
@@ -23,10 +23,10 @@ El registro de estudios sirve como una forma útil de buscar hallazgos de invest
 Un ejemplo  de los beneficios potenciales de los registros de experimentos se presenta en  @turner2008selective, que detalla las tasas de publicación de estudios relacionados con los ensayos clínicos de fase 2 y fase 3 para 12 antidepresivos aprobados por la  Administración de Alimentos y Medicamentos de los Estados Unidos (FDA, por sus siglas en inglés) . La FDA toma una decisión interna sobre si los resultados del ensayo proporcionan evidencia de un impacto positivo del fármaco. Los autores recopilaron información sobre la decisión de la FDA para cada ensayo  así como información sobre la publicación eventual del artículo a partir de una variedad de fuentes.
 
 
-La Figura \@ref{fig:turner} muestra las tasas drásticamente diferentes de publicación y el grado correspondientemente alto de sesgo de publicación. La figura muestra esencialmente todos los ensayos con resultados positivos se publicaron en revistas, aproximadamente el 50 por ciento de los estudios con resultados cuestionables se publicaron, y la mayoría de los estudios con resultados negativos (es decir, sin impacto positivo del fármaco) no se publicaron al menos cuatro años después de que el estudio se completó. En pocas palabras, la literatura publicada por sí sola proporciona una perspectiva altamente engañosa sobre la efectividad de estos fármacos.
+La Figura \@ref(fig:turner) muestra las tasas drásticamente diferentes de publicación y el grado correspondientemente alto de sesgo de publicación. La figura muestra esencialmente todos los ensayos con resultados positivos se publicaron en revistas, aproximadamente el 50 por ciento de los estudios con resultados cuestionables se publicaron, y la mayoría de los estudios con resultados negativos (es decir, sin impacto positivo del fármaco) no se publicaron al menos cuatro años después de que el estudio se completó. En pocas palabras, la literatura publicada por sí sola proporciona una perspectiva altamente engañosa sobre la efectividad de estos fármacos.
 
 ###  Status de publicacion y decisión de la FDA {#fig:turner}
-![turner](figs/turner.jpg)
+![\#fig:turner](figs/turner.jpg)
 
 *Nota: Esta figura fue tomada de* @turner2008selective 
 

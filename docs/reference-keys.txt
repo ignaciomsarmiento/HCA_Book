@@ -38,3 +38,4 @@ planes-de-analisis-previos
 qué-incluir-en-un-planes-de-análisis-previo-pap
 paps-y-los-reportes-registrados
 fig:registered
+status-de-publicacion-y-decisión-de-la-fda
