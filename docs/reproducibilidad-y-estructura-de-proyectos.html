@@ -310,27 +310,27 @@ div.csl-indent {
 <h2><span class="header-section-number">5.2</span> Estructura de Proyectos<a href="reproducibilidad-y-estructura-de-proyectos.html#estructura-de-proyectos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Un punto de partida natural para describir un buen flujo de trabajo es detallar una estructura básica de carpetas en el computador, nuestra sugerencia inspirada en <span class="citation">Gentzkow and Shapiro (<a href="#ref-gentzkow2014code">2014</a>)</span> es la siguiente:</p>
 <pre><code>Complex Project Folder Estructure/
-├── build                    &lt;- construcción de los datos
-│   └── input/
+├── 01_build                    &lt;- construcción de los datos
+│   └── 01_input/
 │       └── my_data.csv
-│   └── scripts/
+│   └── 02_scripts/
 │       └── clean_data.R
-│   └── output/
+│   └── 03_output/
 │       └── data_clean.csv
-│   └── temp/
+│   └── 04_temp/
 │       └── temp_merge.csv
-├── analysis                   &lt;- análisis de los datos
-│   └── input/
+├── 02_analysis                &lt;- análisis de los datos
+│   └── 01_input/
 │       └── data_clean.csv
-│   └── scripts/
-│       └── regressions_table1.R
-│       └── regressions_fig1.R
-│   └── output/
-│       └── fig1.png
-│       └── table1.tex
-│   └── temp/
+│   └── 02_scripts/
+│       └── 01_regressions_table1.R
+│       └── 02_regressions_fig1.R
+│   └── 03_output/
+│       └── 01_fig1.png
+│       └── 02_table1.tex
+│   └── 04_temp/
 │       └── regressions.log
-└── Document                 &lt;- Document
+└── 03_Document                 &lt;- Document
     └── Document.Rmd         &lt;- script documento dinámico
    </code></pre>
 <p>Por supuesto, los detalles variarán para diferentes tipos de investigación y los gustos de diferentes académicos, pero muchos proyectos pueden tener una estructura de archivos similar a la organización básica mostrada aquí. En primer lugar, necesita crear una carpeta maestra con un nombre corto pero descriptivo para el proyecto, un nombre que sea significativo tanto para usted como para sus colaboradores.</p>

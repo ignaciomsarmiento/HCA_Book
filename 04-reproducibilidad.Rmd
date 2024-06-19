@@ -67,27 +67,27 @@ Un punto de partida natural para describir un buen flujo de trabajo es detallar 
 
 ```
 Complex Project Folder Estructure/
-├── build                    <- construcción de los datos
-│   └── input/
+├── 01_build                    <- construcción de los datos
+│   └── 01_input/
 │       └── my_data.csv
-│   └── scripts/
+│   └── 02_scripts/
 │       └── clean_data.R
-│   └── output/
+│   └── 03_output/
 │       └── data_clean.csv
-│   └── temp/
+│   └── 04_temp/
 │       └── temp_merge.csv
-├── analysis				   <- análisis de los datos
-│   └── input/
+├── 02_analysis				   <- análisis de los datos
+│   └── 01_input/
 │       └── data_clean.csv
-│   └── scripts/
-│       └── regressions_table1.R
-│       └── regressions_fig1.R
-│   └── output/
-│       └── fig1.png
-│       └── table1.tex
-│   └── temp/
+│   └── 02_scripts/
+│       └── 01_regressions_table1.R
+│       └── 02_regressions_fig1.R
+│   └── 03_output/
+│       └── 01_fig1.png
+│       └── 02_table1.tex
+│   └── 04_temp/
 │       └── regressions.log
-└── Document                 <- Document
+└── 03_Document                 <- Document
     └── Document.Rmd         <- script documento dinámico
    
 ```
