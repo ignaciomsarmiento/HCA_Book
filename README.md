@@ -1,13 +1,7 @@
-Welcome! 
+# HCA Book
 
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). 
+Bienvenido al repositorio del HCA Book. Este proyecto es un ejemplo de un libro creado con R Markdown y `bookdown`. El libro cubre varios temas importantes y su propósito es proporcionar un recurso educativo accesible y útil para la comunidad.
 
-This template provides a skeleton file structure that you can edit to create your book. 
 
-The contents inside the .Rmd files provide some pointers to help you get started, but feel free to also delete the content in each file and start fresh.
+Este libro tiene como objetivo servir como una guía práctica y educativa sobre diversos temas clave en la investigación reproducible. Está diseñado para ser accesible tanto para principiantes como para aquellos con más experiencia. A lo largo de los capítulos, se exploran principios éticos, técnicas de análisis de datos, prácticas de reproducibilidad y herramientas para la creación de documentos dinámicos.
 
-Additional resources:
-
-The **bookdown** book: https://bookdown.org/yihui/bookdown/
-
-The **bookdown** package reference site: https://pkgs.rstudio.com/bookdown
