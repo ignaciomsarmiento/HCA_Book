@@ -8,7 +8,7 @@ La alternativa tradicional al meta-análisis es la revisión narrativa de la lit
 
 Pero, ¿cómo podemos saber que estamos capturando toda la investigación relevante al llevar a cabo un meta-análisis? Los registros de estudios son una forma importante para que se descubran investigaciones existentes sobre un tema, incluso si el trabajo no termina siendo publicado en una revista.
 
-## Registo y Planes de Analisis previos
+## Registo y Planes de Analisis Previos
 
 Los investigadores clínicos en los Estados Unidos están obligados por ley desde 2007 a registrar prospectivamente los ensayos médicos en una base de datos pública y a publicar los resultados resumidos. Esto ayuda a crear un registro público de ensayos que de otro modo no se publicarían. También puede servir para la prespecificación con el fin de distinguir de manera más creíble la prueba de hipótesis de la generación de hipótesis.
 
