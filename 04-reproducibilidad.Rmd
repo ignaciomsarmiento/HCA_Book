@@ -122,7 +122,7 @@ cd 02_analysis/03_output
 mkdir -p Figures Tables
 
 # Volver al directorio principal
-cd ../../..
+cd ../..
 
 # Crear un archivo README.txt en blanco
 touch README.txt
@@ -162,7 +162,7 @@ cd 02_analysis/03_output
 mkdir -p Figures Tables
 
 # Volver al directorio principal
-cd ../../..
+cd ../..
 
 # Crear el archivo README.txt con la estructura de carpetas y la descripción
 cat <<EOL > README.txt
@@ -213,22 +213,20 @@ echo "¡Carpetas y README.txt creados exitosamente!"
 Sí, puedes usar GitHub Desktop para instalar Git Bash y ejecutar scripts de Bash en Windows. Aquí están las instrucciones detalladas:
 
 
-1. **Paso 1**: Instalar **GitHub Desktop**. Para descargar e Instalar GitHub Desktop ve a [desktop.github.com](https://desktop.github.com) y descarga GitHub Desktop y sigue las instrucciones de instalación.
+1. **Paso 1**: Instalar **GitHub Desktop**. Para descargar e Instalar GitHub Desktop ve a [desktop.github.com](https://desktop.github.com) y descarga GitHub Desktop y sigue las instrucciones de instalación. Asegurarse que [Git](https://www.git-scm.com/) haya sido instalado, de caso contrario crearlo.
 
 2. **Paso 2**: Crear y guardar el Script. Para ello primero abre Notepad o cualquier editor de texto y luego copia el `script` anterior en el editor. Finalmente, guarda el archivo con la extensión `.sh`, por ejemplo, `create_folders.sh`.
 
 3. **Paso 3**: Ejecutar el Script Usando Git Bash:
 
-    3.1. Abre GitHub Desktop desde el menú de inicio. Ve a `File` > `Options` y asegúrate de que `Git Bash` está seleccionado como tu terminal predeterminada. Luego, haz clic en el botón de terminal en la esquina superior derecha de GitHub Desktop (ícono de terminal) para abrir Git Bash.
+    3.1. Abre GitHub Desktop y crea un repositorio. En el explorador de Windows, busca la carpeta del repositorio.
     
-    3.2. Usa el comando `cd` para ir al directorio donde guardaste el script. Por ejemplo: `cd /c/Users/TuUsuario/PathToScript`
+    3.2 Haz click derecho con el mouse  para abrir Git Bash.
     
-    3.3. Haz el script ejecutable, para ello ejecuta: `chmod +x create_folders.sh`
+    3.3. Una vez en la terminal ejecuta el archivo hacieno `sh create_folders.sh`
     
-    3.4. Finalmente, ejecuta el script haciendo `./create_folders.sh` y las carpetas quedarán creadas en tu directorio
 
-  
-
+*Porque usamos Git Bash y no la terminal de windows? Preferimos Git Bash porque es una herramienta que proporciona un entorno similar a UNIX/Linux en Windows, ideal para desarrolladores que necesitan usar comandos de Git y scripts de Bash. Emula una terminal Bash con comandos y utilidades típicas de UNIX, lo que facilita la compatibilidad con herramientas y flujos de trabajo de desarrollo de sistemas basados en UNIX. Por otro lado, la terminal de Windows (Command Prompt) es el intérprete de comandos predeterminado en Windows, diseñado para ejecutar comandos nativos de Windows y scripts batch, siendo más adecuada para tareas administrativas y operaciones específicas del sistema operativo Windows.*
 
 #### Cómo Ejecutar el Script en Mac
 
