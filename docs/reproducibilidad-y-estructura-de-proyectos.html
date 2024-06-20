@@ -26,7 +26,7 @@ Continua</p>" />
 <meta name="author" content="Ignacio Sarmiento Barbieri | Gustavo Castillo-Alvarez" />
 
 
-<meta name="date" content="2024-06-19" />
+<meta name="date" content="2024-06-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -356,7 +356,7 @@ div.csl-indent {
 <span id="cb2-17"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-17" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> Figures Tables</span>
 <span id="cb2-18"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-18" tabindex="-1"></a></span>
 <span id="cb2-19"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-19" tabindex="-1"></a><span class="co"># Volver al directorio principal</span></span>
-<span id="cb2-20"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-20" tabindex="-1"></a><span class="bu">cd</span> ../../..</span>
+<span id="cb2-20"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-20" tabindex="-1"></a><span class="bu">cd</span> ../..</span>
 <span id="cb2-21"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-21" tabindex="-1"></a></span>
 <span id="cb2-22"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-22" tabindex="-1"></a><span class="co"># Crear un archivo README.txt en blanco</span></span>
 <span id="cb2-23"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb2-23" tabindex="-1"></a><span class="fu">touch</span> README.txt</span>
@@ -391,7 +391,7 @@ div.csl-indent {
 <span id="cb3-17"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-17" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> Figures Tables</span>
 <span id="cb3-18"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-18" tabindex="-1"></a></span>
 <span id="cb3-19"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-19" tabindex="-1"></a><span class="co"># Volver al directorio principal</span></span>
-<span id="cb3-20"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-20" tabindex="-1"></a><span class="bu">cd</span> ../../..</span>
+<span id="cb3-20"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-20" tabindex="-1"></a><span class="bu">cd</span> ../..</span>
 <span id="cb3-21"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-21" tabindex="-1"></a></span>
 <span id="cb3-22"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-22" tabindex="-1"></a><span class="co"># Crear el archivo README.txt con la estructura de carpetas y la descripción</span></span>
 <span id="cb3-23"><a href="reproducibilidad-y-estructura-de-proyectos.html#cb3-23" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&lt;&lt;EOL</span> <span class="op">&gt;</span> README.txt</span>
@@ -438,14 +438,14 @@ div.csl-indent {
 <h4><span class="header-section-number">5.2.1.1</span> Cómo Ejecutar el Script en Windows<a href="reproducibilidad-y-estructura-de-proyectos.html#cómo-ejecutar-el-script-en-windows" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Sí, puedes usar GitHub Desktop para instalar Git Bash y ejecutar scripts de Bash en Windows. Aquí están las instrucciones detalladas:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Paso 1</strong>: Instalar <strong>GitHub Desktop</strong>. Para descargar e Instalar GitHub Desktop ve a <a href="https://desktop.github.com">desktop.github.com</a> y descarga GitHub Desktop y sigue las instrucciones de instalación.</p></li>
+<li><p><strong>Paso 1</strong>: Instalar <strong>GitHub Desktop</strong>. Para descargar e Instalar GitHub Desktop ve a <a href="https://desktop.github.com">desktop.github.com</a> y descarga GitHub Desktop y sigue las instrucciones de instalación. Asegurarse que <a href="https://www.git-scm.com/">Git</a> haya sido instalado, de caso contrario crearlo.</p></li>
 <li><p><strong>Paso 2</strong>: Crear y guardar el Script. Para ello primero abre Notepad o cualquier editor de texto y luego copia el <code>script</code> anterior en el editor. Finalmente, guarda el archivo con la extensión <code>.sh</code>, por ejemplo, <code>create_folders.sh</code>.</p></li>
 <li><p><strong>Paso 3</strong>: Ejecutar el Script Usando Git Bash:</p>
-<p>3.1. Abre GitHub Desktop desde el menú de inicio. Ve a <code>File</code> &gt; <code>Options</code> y asegúrate de que <code>Git Bash</code> está seleccionado como tu terminal predeterminada. Luego, haz clic en el botón de terminal en la esquina superior derecha de GitHub Desktop (ícono de terminal) para abrir Git Bash.</p>
-<p>3.2. Usa el comando <code>cd</code> para ir al directorio donde guardaste el script. Por ejemplo: <code>cd /c/Users/TuUsuario/PathToScript</code></p>
-<p>3.3. Haz el script ejecutable, para ello ejecuta: <code>chmod +x create_folders.sh</code></p>
-<p>3.4. Finalmente, ejecuta el script haciendo <code>./create_folders.sh</code> y las carpetas quedarán creadas en tu directorio</p></li>
+<p>3.1. Abre GitHub Desktop y crea un repositorio. En el explorador de Windows, busca la carpeta del repositorio.</p>
+<p>3.2 Haz click derecho con el mouse para abrir Git Bash.</p>
+<p>3.3. Una vez en la terminal ejecuta el archivo hacieno <code>sh create_folders.sh</code></p></li>
 </ol>
+<p><em>Porque usamos Git Bash y no la terminal de windows? Preferimos Git Bash porque es una herramienta que proporciona un entorno similar a UNIX/Linux en Windows, ideal para desarrolladores que necesitan usar comandos de Git y scripts de Bash. Emula una terminal Bash con comandos y utilidades típicas de UNIX, lo que facilita la compatibilidad con herramientas y flujos de trabajo de desarrollo de sistemas basados en UNIX. Por otro lado, la terminal de Windows (Command Prompt) es el intérprete de comandos predeterminado en Windows, diseñado para ejecutar comandos nativos de Windows y scripts batch, siendo más adecuada para tareas administrativas y operaciones específicas del sistema operativo Windows.</em></p>
 </div>
 <div id="cómo-ejecutar-el-script-en-mac" class="section level4 hasAnchor" number="5.2.1.2">
 <h4><span class="header-section-number">5.2.1.2</span> Cómo Ejecutar el Script en Mac<a href="reproducibilidad-y-estructura-de-proyectos.html#cómo-ejecutar-el-script-en-mac" class="anchor-section" aria-label="Anchor link to header"></a></h4>
