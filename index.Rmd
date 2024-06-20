@@ -30,9 +30,9 @@ Este libro está dirigido a estudiantes de posgrado, estudiantes de último año
 
 En un mundo donde la información y la desinformación compiten por la atención pública, es crucial que la investigación en ciencias sociales mantenga altos estándares de rigor y apertura. Este libro pretende ser una guía para lograr estos objetivos, fomentando una comunidad de investigación que valore y practique la ciencia abierta.
 
-El contenido y enfoque de este libro están inspirados y adoptan materiales del texto "Transparent and Reproducible Social Science Research: How to Do Open Science" de Christensen, Garret; Freese, Jeremy; y Miguel, Edward, publicado por University of California Press. Este valioso recurso ha servido como fundamento para estructurar nuestro programa y enriquecer nuestras discusiones sobre la importancia de la ciencia abierta.
+El contenido y enfoque de este libro están inspirados y adoptan materiales del texto [Transparent and reproducible social science research: How to do open science](https://www.ucpress.edu/book/9780520296954/transparent-and-reproducible-social-science-research)] de Christensen, Garret; Freese, Jeremy; y Miguel, Edward, publicado por University of California Press. Este valioso recurso ha servido como fundamento para estructurar nuestro contenido y enriquecer nuestras discusiones sobre la importancia de la ciencia abierta.
 
-Agradecemos a la  Berkeley Initiative for Transparency in the Social Sciences (BITSS), una iniciativa del Center for Effective Global Action (CEGA) de la Universidad de California, en Berkeley y a la Universidad de Los Andes por su apoyo  y esperamos que los conocimientos y habilidades adquiridos aquí se extiendan más allá del aula, contribuyendo al avance de la ciencia social en nuestra región.
+Agradecemos a la  [Berkeley Initiative for Transparency in the Social Sciences (BITSS)](https://www.bitss.org/), una iniciativa del Center for Effective Global Action (CEGA) de la Universidad de California, en Berkeley y a la Universidad de Los Andes por su apoyo  y esperamos que los conocimientos y habilidades adquiridos aquí se extiendan más allá del aula, contribuyendo al avance de la ciencia social en nuestra región.
 
 
 
