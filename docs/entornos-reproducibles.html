@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title> 6 Entornos Reproducibles | Haciendo Ciencia Abierta</title>
+  <meta name="description" content="<p>Este será el libro guía con el que podrán seguir el curso <em>HCA</em> de Educación
+Continua</p>" />
+  <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
+
+  <meta property="og:title" content=" 6 Entornos Reproducibles | Haciendo Ciencia Abierta" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>Este será el libro guía con el que podrán seguir el curso <em>HCA</em> de Educación
+Continua</p>" />
+  <meta name="github-repo" content="ignaciomsarmiento/HCA_Book/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content=" 6 Entornos Reproducibles | Haciendo Ciencia Abierta" />
+  
+  <meta name="twitter:description" content="<p>Este será el libro guía con el que podrán seguir el curso <em>HCA</em> de Educación
+Continua</p>" />
+  
+
+<meta name="author" content="Ignacio Sarmiento Barbieri | Gustavo Castillo-Alvarez" />
+
+
+<meta name="date" content="2025-02-01" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="reproducibilidad-y-estructura-de-proyectos.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Haciendo Ciencia Abierta</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prefacio</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#la-confiabilidad-de-la-evidencia"><i class="fa fa-check"></i><b>2.1</b> La Confiabilidad de la Evidencia</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="intro.html"><a href="intro.html#fraude"><i class="fa fa-check"></i><b>2.1.1</b> Fraude</a></li>
+<li class="chapter" data-level="2.1.2" data-path="intro.html"><a href="intro.html#incapacidad-para-reproducir-resultados"><i class="fa fa-check"></i><b>2.1.2</b> Incapacidad para reproducir resultados</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#cambios-de-la-aea-sobre-transparencia-y-el-editor-de-datos"><i class="fa fa-check"></i><b>2.2</b> Cambios de la AEA sobre Transparencia y el Editor de Datos</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#mejorar-la-confiabilidad-de-la-investigación"><i class="fa fa-check"></i><b>2.3</b> Mejorar la Confiabilidad de la Investigación</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="inv_etica.html"><a href="inv_etica.html"><i class="fa fa-check"></i><b>3</b> Investigación Ética</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="inv_etica.html"><a href="inv_etica.html#normas-mertonianas-para-una-investigación-ética"><i class="fa fa-check"></i><b>3.1</b> Normas mertonianas para una investigación ética</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="inv_etica.html"><a href="inv_etica.html#universalismo"><i class="fa fa-check"></i><b>3.1.1</b> Universalismo</a></li>
+<li class="chapter" data-level="3.1.2" data-path="inv_etica.html"><a href="inv_etica.html#comunalismo"><i class="fa fa-check"></i><b>3.1.2</b> Comunalismo</a></li>
+<li class="chapter" data-level="3.1.3" data-path="inv_etica.html"><a href="inv_etica.html#desinterés"><i class="fa fa-check"></i><b>3.1.3</b> Desinterés</a></li>
+<li class="chapter" data-level="3.1.4" data-path="inv_etica.html"><a href="inv_etica.html#escepticismo-organizado"><i class="fa fa-check"></i><b>3.1.4</b> Escepticismo Organizado</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="inv_etica.html"><a href="inv_etica.html#normas-en-la-práctica"><i class="fa fa-check"></i><b>3.2</b> Normas en la práctica</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="inv_etica.html"><a href="inv_etica.html#tab:normascontranormas"><i class="fa fa-check"></i><b>3.2.1</b> Normas y Contranormas en la Ciencia</a></li>
+<li class="chapter" data-level="3.2.2" data-path="inv_etica.html"><a href="inv_etica.html#fig:anderson_fig"><i class="fa fa-check"></i><b>3.2.2</b> Normas versus contranormas en la práctica</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="inv_etica.html"><a href="inv_etica.html#problemas"><i class="fa fa-check"></i><b>3.3</b> Problemas</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="inv_etica.html"><a href="inv_etica.html#modelo-conceptual-para-aproximar-estos-problemas"><i class="fa fa-check"></i><b>3.3.1</b> Modelo conceptual para aproximar estos problemas</a></li>
+<li class="chapter" data-level="3.3.2" data-path="inv_etica.html"><a href="inv_etica.html#evidencia-del-problema"><i class="fa fa-check"></i><b>3.3.2</b> Evidencia del problema</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="preanalisis.html"><a href="preanalisis.html"><i class="fa fa-check"></i><b>4</b> Promoviendo Ciencia Transparante</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="preanalisis.html"><a href="preanalisis.html#registo-y-planes-de-analisis-previos"><i class="fa fa-check"></i><b>4.1</b> Registo y Planes de Analisis Previos</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="preanalisis.html"><a href="preanalisis.html#registros-de-estudios"><i class="fa fa-check"></i><b>4.1.1</b> Registros de estudios</a></li>
+<li class="chapter" data-level="4.1.2" data-path="preanalisis.html"><a href="preanalisis.html#fig:turner"><i class="fa fa-check"></i><b>4.1.2</b> Status de publicacion y decisión de la FDA</a></li>
+<li class="chapter" data-level="4.1.3" data-path="preanalisis.html"><a href="preanalisis.html#planes-de-analisis-previos"><i class="fa fa-check"></i><b>4.1.3</b> Planes de Analisis previos</a></li>
+<li class="chapter" data-level="4.1.4" data-path="preanalisis.html"><a href="preanalisis.html#fig:registered"><i class="fa fa-check"></i><b>4.1.4</b> Modelos de publicacion: Standard y Regristrados</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html"><i class="fa fa-check"></i><b>5</b> Reproducibilidad y Estructura de Proyectos</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#flujos-de-trabajo-reproducibles"><i class="fa fa-check"></i><b>5.1</b> Flujos de Trabajo Reproducibles</a></li>
+<li class="chapter" data-level="5.2" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#estructura-de-proyectos"><i class="fa fa-check"></i><b>5.2</b> Estructura de Proyectos</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#creando-la-estructura-de-proyecto-automáticamente"><i class="fa fa-check"></i><b>5.2.1</b> Creando la estructura de proyecto automáticamente</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#gestión-de-rutas-en-los-directorios-de-trabajo"><i class="fa fa-check"></i><b>5.3</b> Gestión de Rutas en los Directorios de Trabajo</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#proyectos-en-rstudio"><i class="fa fa-check"></i><b>5.3.1</b> Proyectos en RStudio</a></li>
+<li class="chapter" data-level="5.3.2" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#rutas-de-archivos-y-el-paquete-here"><i class="fa fa-check"></i><b>5.3.2</b> Rutas de Archivos y el Paquete {here}</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#nombrar-archivos"><i class="fa fa-check"></i><b>5.4</b> Nombrar archivos</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#nombres-de-archivos-legibles-por-computadora"><i class="fa fa-check"></i><b>5.4.1</b> Nombres de archivos legibles por computadora</a></li>
+<li class="chapter" data-level="5.4.2" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#nombres-de-archivos-legibles-por-humanos"><i class="fa fa-check"></i><b>5.4.2</b> Nombres de archivos legibles por humanos</a></li>
+<li class="chapter" data-level="5.4.3" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#nombres-de-archivos-que-funcionan-bien-con-el-orden-predeterminado"><i class="fa fa-check"></i><b>5.4.3</b> Nombres de archivos que funcionan bien con el orden predeterminado</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#buenas-prácticas-para-escribir-código"><i class="fa fa-check"></i><b>5.5</b> Buenas prácticas para escribir código</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#mantén-el-código-modular"><i class="fa fa-check"></i><b>5.5.1</b> Mantén el código modular</a></li>
+<li class="chapter" data-level="5.5.2" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#mantén-el-código-corto-y-con-propósito"><i class="fa fa-check"></i><b>5.5.2</b> Mantén el código corto y con propósito</a></li>
+<li class="chapter" data-level="5.5.3" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#haz-que-tus-funciones-sean-tímidas"><i class="fa fa-check"></i><b>5.5.3</b> Haz que tus funciones sean tímidas</a></li>
+<li class="chapter" data-level="5.5.4" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#ordena-tus-funciones-para-una-lectura-lineal"><i class="fa fa-check"></i><b>5.5.4</b> Ordena tus funciones para una lectura lineal</a></li>
+<li class="chapter" data-level="5.5.5" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#usa-nombres-descriptivos"><i class="fa fa-check"></i><b>5.5.5</b> Usa nombres descriptivos</a></li>
+<li class="chapter" data-level="5.5.6" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#sé-consistente"><i class="fa fa-check"></i><b>5.5.6</b> Sé consistente</a></li>
+<li class="chapter" data-level="5.5.7" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#comenta-el-código"><i class="fa fa-check"></i><b>5.5.7</b> Comenta el código</a></li>
+<li class="chapter" data-level="5.5.8" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#indenta-el-código"><i class="fa fa-check"></i><b>5.5.8</b> Indenta el código</a></li>
+<li class="chapter" data-level="5.5.9" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#no-dejes-desorden"><i class="fa fa-check"></i><b>5.5.9</b> No dejes desorden</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#gestión-de-paquetes-estadísticos"><i class="fa fa-check"></i><b>5.6</b> Gestión de Paquetes Estadísticos</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="reproducibilidad-y-estructura-de-proyectos.html"><a href="reproducibilidad-y-estructura-de-proyectos.html#palabras-finales"><i class="fa fa-check"></i><b>5.6.1</b> Palabras finales</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html"><i class="fa fa-check"></i><b>6</b> Entornos Reproducibles</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#instalación-de-miniconda"><i class="fa fa-check"></i><b>6.1</b> Instalación de Miniconda</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#pasos"><i class="fa fa-check"></i><b>6.1.1</b> Pasos</a></li>
+<li class="chapter" data-level="6.1.2" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#entendiendo-tu-prompt-de-shell"><i class="fa fa-check"></i><b>6.1.2</b> Entendiendo tu Prompt de Shell</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#gestión-de-entornos"><i class="fa fa-check"></i><b>6.2</b> Gestión de Entornos</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#activación-y-desactivación"><i class="fa fa-check"></i><b>6.2.1</b> Activación y Desactivación</a></li>
+<li class="chapter" data-level="6.2.2" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#eliminando-entornos"><i class="fa fa-check"></i><b>6.2.2</b> Eliminando entornos</a></li>
+<li class="chapter" data-level="6.2.3" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#comandos-de-gestión-de-entornos"><i class="fa fa-check"></i><b>6.2.3</b> Comandos de Gestión de Entornos</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#gestión-de-paquetes"><i class="fa fa-check"></i><b>6.3</b> Gestión de Paquetes</a></li>
+<li class="chapter" data-level="6.4" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#consejos-avanzados"><i class="fa fa-check"></i><b>6.4</b> Consejos Avanzados</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#usando-mamba-para-mayor-velocidad"><i class="fa fa-check"></i><b>6.4.1</b> Usando mamba para Mayor Velocidad</a></li>
+<li class="chapter" data-level="6.4.2" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#configurando-conda-forge"><i class="fa fa-check"></i><b>6.4.2</b> Configurando conda-forge</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#mejores-prácticas-para-computación-científica"><i class="fa fa-check"></i><b>6.5</b> Mejores Prácticas para Computación Científica</a></li>
+<li class="chapter" data-level="6.6" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#conclusión"><i class="fa fa-check"></i><b>6.6</b> Conclusión</a></li>
+<li class="chapter" data-level="6.7" data-path="entornos-reproducibles.html"><a href="entornos-reproducibles.html#recursos-adicionales"><i class="fa fa-check"></i><b>6.7</b> Recursos Adicionales</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="./" target="blank">Haciendo Ciencia Abierta</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Haciendo Ciencia Abierta</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="entornos-reproducibles" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number"> 6</span> Entornos Reproducibles<a href="entornos-reproducibles.html#entornos-reproducibles" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>En la computación científica y la investigación, la reproducibilidad es crucial. Una de las principales herramientas que nos ayuda a lograr esto es <code>conda</code>, un potente sistema de gestión de paquetes y entornos. Este tutorial te guiará a través de la configuración y uso efectivo de conda en Windows, enfocándose en las mejores prácticas para la computación científica.</p>
+<div id="instalación-de-miniconda" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Instalación de Miniconda<a href="entornos-reproducibles.html#instalación-de-miniconda" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>En lugar de instalar la distribución completa de Anaconda, usaremos Miniconda - una alternativa ligera que nos da justo lo que necesitamos. El método de instalación recomendado es a través de la interfaz de línea de comandos (CLI) para practicar estas habilidades esenciales. Los pasos de instalación siguen el tutorial oficial de CLI de la <a href="https://docs.anaconda.com/miniconda/install/">documentación oficial</a>.</p>
+<div id="pasos" class="section level3 hasAnchor" number="6.1.1">
+<h3><span class="header-section-number">6.1.1</span> Pasos<a href="entornos-reproducibles.html#pasos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Abre Windows PowerShell y ejecuta estos comandos:</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb14-1"><a href="entornos-reproducibles.html#cb14-1" tabindex="-1"></a><span class="fu">wget</span> <span class="st">&quot;https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe&quot;</span> <span class="op">-</span>outfile <span class="st">&quot;.\miniconda.exe&quot;</span></span>
+<span id="cb14-2"><a href="entornos-reproducibles.html#cb14-2" tabindex="-1"></a><span class="fu">Start-Process</span> <span class="op">-</span>FilePath <span class="st">&quot;.\miniconda.exe&quot;</span> <span class="op">-</span>ArgumentList <span class="st">&quot;/S&quot;</span> <span class="op">-</span>Wait</span>
+<span id="cb14-3"><a href="entornos-reproducibles.html#cb14-3" tabindex="-1"></a><span class="fu">del</span> <span class="op">.</span>\miniconda<span class="op">.</span><span class="fu">exe</span></span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Una vez instalado, abre el <strong>Anaconda PowerShell Prompt</strong> desde tu Menú de Inicio</li>
+<li>Verifica tu instalación ejecutando:</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb15-1"><a href="entornos-reproducibles.html#cb15-1" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span></code></pre></div>
+<p>Deberías ver algo como:</p>
+<pre><code>(base) PS C:\Users\USER&gt; conda --version
+conda 24.11.1</code></pre>
+</div>
+<div id="entendiendo-tu-prompt-de-shell" class="section level3 hasAnchor" number="6.1.2">
+<h3><span class="header-section-number">6.1.2</span> Entendiendo tu Prompt de Shell<a href="entornos-reproducibles.html#entendiendo-tu-prompt-de-shell" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Esa línea <code>(base) PS C:\Users\USER&gt;</code> es el prompt de tu shell. Analicémosla:</p>
+<ul>
+<li><code>(base)</code>: Muestra tu entorno conda activo (base es el predeterminado)</li>
+<li><code>PS</code>: Indica que estás en PowerShell</li>
+<li><code>C:\Users\USER&gt;</code>: Muestra tu directorio actual</li>
+</ul>
+</div>
+</div>
+<div id="gestión-de-entornos" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Gestión de Entornos<a href="entornos-reproducibles.html#gestión-de-entornos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Los entornos son espacios aislados donde puedes instalar versiones específicas de paquetes sin afectar otros proyectos. Así es como trabajar con ellos:</p>
+<p>### Creando un Nuevo Entorno</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb17-1"><a href="entornos-reproducibles.html#cb17-1" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> mi_entorno python=3.11 numpy scipy matplotlib</span></code></pre></div>
+<p>Esto crea un entorno llamado <code>mi_entorno</code> con Python 3.11 y algunos paquetes científicos esenciales: <code>numpy</code>, <code>scipy</code> y <code>matplotlib</code>.</p>
+<div id="activación-y-desactivación" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Activación y Desactivación<a href="entornos-reproducibles.html#activación-y-desactivación" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb18"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb18-1"><a href="entornos-reproducibles.html#cb18-1" tabindex="-1"></a><span class="co"># Activar</span></span>
+<span id="cb18-2"><a href="entornos-reproducibles.html#cb18-2" tabindex="-1"></a><span class="ex">conda</span> activate mi_entorno</span>
+<span id="cb18-3"><a href="entornos-reproducibles.html#cb18-3" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="entornos-reproducibles.html#cb18-4" tabindex="-1"></a><span class="co"># Desactivar cuando hayas terminado</span></span>
+<span id="cb18-5"><a href="entornos-reproducibles.html#cb18-5" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code></pre></div>
+<p>Recuerda que el entorno activo se muestra en el prompt. Si hubiéramos activado <code>mi_entorno</code> el prompt se vería así:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb19-1"><a href="entornos-reproducibles.html#cb19-1" tabindex="-1"></a><span class="op">(</span>mi_entorno<span class="op">)</span> <span class="fu">PS</span> C<span class="op">:</span>\Users\USER<span class="op">&gt;</span> </span></code></pre></div>
+</div>
+<div id="eliminando-entornos" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Eliminando entornos<a href="entornos-reproducibles.html#eliminando-entornos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Si deseas eliminar el entorno <code>mi_entorno</code> que creamos anteriormente, primero necesitas desactivarlo con <code>conda deactivate</code>. Después, usando el comando <code>conda remove</code> puedes eliminarlo:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb20-1"><a href="entornos-reproducibles.html#cb20-1" tabindex="-1"></a><span class="co"># Para eliminar el entorno y todos sus paquetes asociados</span></span>
+<span id="cb20-2"><a href="entornos-reproducibles.html#cb20-2" tabindex="-1"></a><span class="ex">conda</span> remove <span class="at">--name</span> mi_entorno <span class="at">--all</span> </span></code></pre></div>
+</div>
+<div id="comandos-de-gestión-de-entornos" class="section level3 hasAnchor" number="6.2.3">
+<h3><span class="header-section-number">6.2.3</span> Comandos de Gestión de Entornos<a href="entornos-reproducibles.html#comandos-de-gestión-de-entornos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb21-1"><a href="entornos-reproducibles.html#cb21-1" tabindex="-1"></a><span class="co"># Listar todos los entornos</span></span>
+<span id="cb21-2"><a href="entornos-reproducibles.html#cb21-2" tabindex="-1"></a><span class="ex">conda</span> env list</span>
+<span id="cb21-3"><a href="entornos-reproducibles.html#cb21-3" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="entornos-reproducibles.html#cb21-4" tabindex="-1"></a><span class="co"># Exportar configuración del entorno</span></span>
+<span id="cb21-5"><a href="entornos-reproducibles.html#cb21-5" tabindex="-1"></a><span class="ex">conda</span> env export <span class="op">&gt;</span> environment.yml</span>
+<span id="cb21-6"><a href="entornos-reproducibles.html#cb21-6" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="entornos-reproducibles.html#cb21-7" tabindex="-1"></a><span class="co"># Recrear entorno desde archivo</span></span>
+<span id="cb21-8"><a href="entornos-reproducibles.html#cb21-8" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml</span></code></pre></div>
+</div>
+</div>
+<div id="gestión-de-paquetes" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Gestión de Paquetes<a href="entornos-reproducibles.html#gestión-de-paquetes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La gestión de paquetes en conda es sencilla:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="entornos-reproducibles.html#cb22-1" tabindex="-1"></a><span class="co"># Instalar paquetes</span></span>
+<span id="cb22-2"><a href="entornos-reproducibles.html#cb22-2" tabindex="-1"></a><span class="ex">conda</span> install pandas seaborn</span>
+<span id="cb22-3"><a href="entornos-reproducibles.html#cb22-3" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="entornos-reproducibles.html#cb22-4" tabindex="-1"></a><span class="co"># Eliminar paquetes</span></span>
+<span id="cb22-5"><a href="entornos-reproducibles.html#cb22-5" tabindex="-1"></a><span class="ex">conda</span> remove seaborn</span>
+<span id="cb22-6"><a href="entornos-reproducibles.html#cb22-6" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="entornos-reproducibles.html#cb22-7" tabindex="-1"></a><span class="co"># Actualizar paquetes</span></span>
+<span id="cb22-8"><a href="entornos-reproducibles.html#cb22-8" tabindex="-1"></a><span class="ex">conda</span> update numpy</span>
+<span id="cb22-9"><a href="entornos-reproducibles.html#cb22-9" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="entornos-reproducibles.html#cb22-10" tabindex="-1"></a><span class="co"># Buscar paquetes</span></span>
+<span id="cb22-11"><a href="entornos-reproducibles.html#cb22-11" tabindex="-1"></a><span class="ex">conda</span> search scikit-learn</span></code></pre></div>
+</div>
+<div id="consejos-avanzados" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Consejos Avanzados<a href="entornos-reproducibles.html#consejos-avanzados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="usando-mamba-para-mayor-velocidad" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Usando mamba para Mayor Velocidad<a href="entornos-reproducibles.html#usando-mamba-para-mayor-velocidad" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Si encuentras que conda es lento, prueba mamba - es una alternativa más rápida:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href="entornos-reproducibles.html#cb23-1" tabindex="-1"></a><span class="co"># Instalar mamba</span></span>
+<span id="cb23-2"><a href="entornos-reproducibles.html#cb23-2" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-n</span> base <span class="at">-c</span> conda-forge mamba</span>
+<span id="cb23-3"><a href="entornos-reproducibles.html#cb23-3" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="entornos-reproducibles.html#cb23-4" tabindex="-1"></a><span class="co"># Usar mamba en lugar de conda</span></span>
+<span id="cb23-5"><a href="entornos-reproducibles.html#cb23-5" tabindex="-1"></a><span class="ex">mamba</span> install pandas</span></code></pre></div>
+</div>
+<div id="configurando-conda-forge" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Configurando conda-forge<a href="entornos-reproducibles.html#configurando-conda-forge" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>El canal conda-forge proporciona paquetes más actualizados:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb24-1"><a href="entornos-reproducibles.html#cb24-1" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--add</span> channels conda-forge</span>
+<span id="cb24-2"><a href="entornos-reproducibles.html#cb24-2" tabindex="-1"></a><span class="ex">conda</span> config <span class="at">--set</span> channel_priority strict</span></code></pre></div>
+</div>
+</div>
+<div id="mejores-prácticas-para-computación-científica" class="section level2 hasAnchor" number="6.5">
+<h2><span class="header-section-number">6.5</span> Mejores Prácticas para Computación Científica<a href="entornos-reproducibles.html#mejores-prácticas-para-computación-científica" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Aunque en el curso profundizamos mucho más en herramientas y prácticas, aquí hay una breve descripción de recomendaciones fáciles de implementar de inmediato:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Siempre usa archivos de entorno</strong>: Documenta tu entorno con <code>environment.yml</code></li>
+<li><strong>Usa versiones específicas</strong>: Especifica versiones exactas de paquetes críticos como <code>matplotlib=1.4.3</code></li>
+<li><strong>Mantén los entornos mínimos</strong>: Solo instala lo que necesites</li>
+<li><strong>Documenta todo</strong>: Incluye archivos README explicando la configuración de tu entorno</li>
+<li><strong>Usa control de versiones</strong>: Rastrea tus archivos de entorno usando git y, cuando colabores, GitHub</li>
+</ol>
+</div>
+<div id="conclusión" class="section level2 hasAnchor" number="6.6">
+<h2><span class="header-section-number">6.6</span> Conclusión<a href="entornos-reproducibles.html#conclusión" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Usar conda efectivamente es clave para mantener flujos de trabajo reproducibles en computación científica. Siguiendo estas prácticas, tendrás un entorno robusto y reproducible para tu investigación.</p>
+</div>
+<div id="recursos-adicionales" class="section level2 hasAnchor" number="6.7">
+<h2><span class="header-section-number">6.7</span> Recursos Adicionales<a href="entornos-reproducibles.html#recursos-adicionales" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><a href="https://docs.conda.io/">Documentación oficial de conda</a></li>
+<li><a href="https://conda-forge.org/">conda-forge</a></li>
+<li><a href="https://docs.anaconda.com/miniconda/">Guía de instalación de Miniconda</a></li>
+</ul>
+<p><em>Nota: Este tutorial fue actualizado por última vez el 31 de enero de 2025. Por favor, consulta la documentación oficial para la información más reciente.</em></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="reproducibilidad-y-estructura-de-proyectos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/ignaciomsarmiento/HCA_Book/edit/BRANCH/07-entornos_reproducibles.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
