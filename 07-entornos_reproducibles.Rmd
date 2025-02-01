@@ -1,0 +1,152 @@
+# Entornos Reproducibles
+
+En la computación científica y la investigación, la reproducibilidad es crucial. Una de las principales herramientas que nos ayuda a lograr esto es `conda`, un potente sistema de gestión de paquetes y entornos. Este tutorial te guiará a través de la configuración y uso efectivo de conda en Windows, enfocándose en las mejores prácticas para la computación científica.
+
+## Instalación de Miniconda
+
+En lugar de instalar la distribución completa de Anaconda, usaremos Miniconda - una alternativa ligera que nos da justo lo que necesitamos. El método de instalación recomendado es a través de la interfaz de línea de comandos (CLI) para practicar estas habilidades esenciales. Los pasos de instalación siguen el tutorial oficial de CLI de la [documentación oficial](https://docs.anaconda.com/miniconda/install/).
+
+### Pasos
+
+1. Abre Windows PowerShell y ejecuta estos comandos:
+  
+```powershell
+wget "https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe" -outfile ".\miniconda.exe"
+Start-Process -FilePath ".\miniconda.exe" -ArgumentList "/S" -Wait
+del .\miniconda.exe
+```
+
+2. Una vez instalado, abre el **Anaconda PowerShell Prompt** desde tu Menú de Inicio
+3. Verifica tu instalación ejecutando:
+  
+```bash
+conda --version
+```
+
+Deberías ver algo como:
+  
+```
+(base) PS C:\Users\USER> conda --version
+conda 24.11.1
+```
+
+### Entendiendo tu Prompt de Shell
+
+Esa línea `(base) PS C:\Users\USER>` es el prompt de tu shell. Analicémosla:
+  
+- `(base)`: Muestra tu entorno conda activo (base es el predeterminado)
+- `PS`: Indica que estás en PowerShell
+- `C:\Users\USER>`: Muestra tu directorio actual
+
+## Gestión de Entornos
+
+Los entornos son espacios aislados donde puedes instalar versiones específicas de paquetes sin afectar otros proyectos. Así es como trabajar con ellos:
+  
+  ### Creando un Nuevo Entorno
+  
+```bash
+conda create --name mi_entorno python=3.11 numpy scipy matplotlib
+```
+
+Esto crea un entorno llamado `mi_entorno` con Python 3.11 y algunos paquetes científicos esenciales: `numpy`, `scipy` y `matplotlib`.
+
+### Activación y Desactivación
+
+```bash
+# Activar
+conda activate mi_entorno
+
+# Desactivar cuando hayas terminado
+conda deactivate
+```
+
+Recuerda que el entorno activo se muestra en el prompt. Si hubiéramos activado `mi_entorno` el prompt se vería así:
+  
+  ```powershell
+(mi_entorno) PS C:\Users\USER> 
+  ```
+
+### Eliminando entornos
+
+Si deseas eliminar el entorno `mi_entorno` que creamos anteriormente, primero necesitas desactivarlo con `conda deactivate`. Después, usando el comando `conda remove` puedes eliminarlo:
+  
+  ```bash
+# Para eliminar el entorno y todos sus paquetes asociados
+conda remove --name mi_entorno --all 
+```
+
+### Comandos de Gestión de Entornos
+
+```bash
+# Listar todos los entornos
+conda env list
+
+# Exportar configuración del entorno
+conda env export > environment.yml
+
+# Recrear entorno desde archivo
+conda env create -f environment.yml
+```
+
+## Gestión de Paquetes
+
+La gestión de paquetes en conda es sencilla:
+  
+  ```bash
+# Instalar paquetes
+conda install pandas seaborn
+
+# Eliminar paquetes
+conda remove seaborn
+
+# Actualizar paquetes
+conda update numpy
+
+# Buscar paquetes
+conda search scikit-learn
+```
+
+## Consejos Avanzados
+
+### Usando mamba para Mayor Velocidad
+
+Si encuentras que conda es lento, prueba mamba - es una alternativa más rápida:
+  
+  ```bash
+# Instalar mamba
+conda install -n base -c conda-forge mamba
+
+# Usar mamba en lugar de conda
+mamba install pandas
+```
+
+### Configurando conda-forge
+
+El canal conda-forge proporciona paquetes más actualizados:
+  
+  ```bash
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+## Mejores Prácticas para Computación Científica
+
+Aunque en el curso profundizamos mucho más en herramientas y prácticas, aquí hay una breve descripción de recomendaciones fáciles de implementar de inmediato:
+  
+  1. **Siempre usa archivos de entorno**: Documenta tu entorno con `environment.yml`
+2. **Usa versiones específicas**: Especifica versiones exactas de paquetes críticos como `matplotlib=1.4.3`
+3. **Mantén los entornos mínimos**: Solo instala lo que necesites
+4. **Documenta todo**: Incluye archivos README explicando la configuración de tu entorno
+5. **Usa control de versiones**: Rastrea tus archivos de entorno usando git y, cuando colabores, GitHub
+
+## Conclusión
+
+Usar conda efectivamente es clave para mantener flujos de trabajo reproducibles en computación científica. Siguiendo estas prácticas, tendrás un entorno robusto y reproducible para tu investigación.
+
+## Recursos Adicionales
+
+- [Documentación oficial de conda](https://docs.conda.io/)
+- [conda-forge](https://conda-forge.org/)
+- [Guía de instalación de Miniconda](https://docs.anaconda.com/miniconda/)
+
+_Nota: Este tutorial fue actualizado por última vez el 31 de enero de 2025. Consulte la documentación oficial para la información más reciente._
