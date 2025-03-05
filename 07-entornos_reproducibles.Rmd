@@ -137,7 +137,8 @@ Aunque en el curso profundizamos mucho más en herramientas y prácticas, aquí 
 2. **Usa versiones específicas**: Especifica versiones exactas de paquetes críticos como `matplotlib=1.4.3`
 3. **Mantén los entornos mínimos**: Solo instala lo que necesites
 4. **Documenta todo**: Incluye archivos README explicando la configuración de tu entorno
-5. **Usa control de versiones**: Rastrea tus archivos de entorno usando git y, cuando colabores, GitHub
+5. **Usa control de versiones**: Rastrea tus archivos de entorno usando git y, cuando colabores, GitHub. Para más detalles sobre el uso de `.drawio` en Git, consulta [esta corta explicación](gestion_drawio_git.html).
+
 
 ## Conclusión
 
